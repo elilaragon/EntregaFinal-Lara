@@ -648,25 +648,107 @@ footer {
 /* //TRABAJA CON NOSOTROS// */
 
 .banner-buscar-trabajo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     /* width: 80%; */
-    height: 400px;
+    height: 200px;
     background-color: #D9D9D9;
+    position: absolute;
+    top: 240px;
+    padding: 0 80px;
 }
 
 .titulo-banner-trabajo h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
     font-weight: 600;
     font-size: 55px;
+}
+
+.banner-busca-empleo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+    height: 200px;
+    width: auto;
+    background-image: url("https://res.cloudinary.com/elizapardo/image/upload/v1677669932/Web%20Kofe/pexels-negative-space-34079_zlcexi.jpg");
+}
+
+@media (min-width: 1200px) {
+    .banner-busca-empleo {
+        height: 300px;
+        width: 100%;
+    }
+}
+.boton-buscar {
+width: 100%;
+    background-color: #F06B5F;
+    color:#EAEBEB;
+
+}
+.boton-buscar:hover{
+background-color: #3F525A;    
+}
+.selectores-de-trabajo {
+    display: flex;
+}
+
+.contenedor-formularios {
+    margin-top: 200px;
     display: flex;
     align-items: center;
 }
+.formularios{
+border: #2A3040 solid 1px;
+padding: 20px;
+border-radius: 12px;
+}
 
-.form-select {
+.foto-cv img{
+    width: 200px;
+    height: auto;
+}
+.foto-cv{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 30%;
-    margin: 10px;
 
+}
+
+.btn-boton-subir-foto {
+    margin: 10px;
+    background-color:#2A3040;
+    border-radius: 40px;
+    color: #EAEBEB;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.12);
+}
+.btn-boton-subir-foto:hover{
+    background-color:#3F525A;
+    color: #EAEBEB;
+}
+
+.linea-horizontal-formularios{
+    margin-top: 30px;
+    background-color: #2A3040;
+}
+.boton-subir-cv{
+    background-color:#2A3040;
+    color: #EAEBEB;
+}
+.boton-enviar {
+    background-color:#2A3040;
+    color: #EAEBEB;
+}
+.botones-formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-botones-formulario{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 100px;
 }
