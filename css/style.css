@@ -168,6 +168,8 @@ body {
     padding-top: 10px;
     text-align: left;
     font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
 }
 
 .boton-principal {
@@ -195,18 +197,22 @@ body {
 
 
 .texto-tarjeta {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
+    margin-top: 10px;
 }
 
 @media (min-width: 1200px) {
     .texto-tarjeta {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 500;
     }
 }
 
-
+.texto-tarjeta-gramos {
+    font-weight: 700;
+    font-size: 14px;
+}
 
 .banner-rebajas {
     display: flex;
@@ -742,6 +748,7 @@ border-radius: 12px;
     background-color:#2A3040;
     color: #EAEBEB;
 }
+
 .botones-formulario{
     display: flex;
     justify-content: center;
@@ -752,3 +759,34 @@ border-radius: 12px;
     justify-content: space-between;
     padding-inline: 100px;
 }
+
+.nos-encanta {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.titulo-trabajo {
+font-weight: 700;
+font-size: 50px;
+margin-right: 50px;
+}
+.texto-trabajo{
+    padding-top: 20px;
+}
+
+/* // PRODUCTO// */
+
+.estrellas img {
+    margin-top: 10px;
+}
+
+.texto-tarjeta-precio {
+    color: #F06B5F;
+    font-weight: 700;
+    margin-top: 4px;
+}
+.texto-tarjeta-iva {
+    font-size: 10px;
+}
+
