@@ -123,12 +123,12 @@ body {
 }
 
 .tarjeta-de-producto {
-    border: 1px solid;
+    /* border: 1px solid;
     border-radius: 10px;
-    border-color: #333;
+    border-color: #333; */
     padding: 12px;
     max-height: fit-content;
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19); */
     transition: 0.4s;
     max-width: 69%;
     display: block;
@@ -136,9 +136,9 @@ body {
 
 @media (min-width: 550px) {
     .tarjeta-de-producto {
-        border: 1px solid;
+        /* border: 1px solid;
         border-radius: 12px;
-        border-color: #333;
+        border-color: #333; */
         padding: 16px;
         height: auto;
         max-width: 100%;
@@ -185,8 +185,7 @@ body {
 .titulo-principal-tarjeta-recetas {
     padding-top: 10px;
     font-weight: 600;
-    font-size: 20px;
-    max-width: 5px;
+    font-size: 18px;
 }
 
 @media (min-width: 550px) {
@@ -379,7 +378,7 @@ body {
 
 
 .imagen-tarjeta-recetas img {
-    width: 100%;
+    max-width: 90%;
     height: auto;
     border-radius: 12px;
     margin-top: 20px;
@@ -403,29 +402,24 @@ footer {
     color: #EAEBEB;
 }
 
-.imagen-nivel-de-receta {
-    width: 18px;
+.imagen-nivel-de-receta img {
+    width: 120px;
     height: auto;
+    padding-left: 8px;
 
 }
 
 .contenedor-nivel-de-dificultad-recetas {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    width: 190px;
+    flex-wrap: wrap;
 }
 
-.imagen-nivel-de-receta img {
-    color: #F06B5F;
-    align-items: center;
-}
 
 .texto-tarjeta-2 {
     font-size: 13px;
-    font-weight: 500;
-    align-items: center;
+    font-weight: 600;
+    align-items: start;
 }
 
 .carrusel-video-recetas {
