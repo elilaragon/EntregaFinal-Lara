@@ -436,7 +436,7 @@ footer {
     display: flex;
 }
 
-@media (min-width:1200px) {
+@media (min-width:550px) {
     .contenedor-tarjetas-recetas {
         /* width: 1200px; */
         display: flex;
@@ -452,9 +452,16 @@ footer {
     display: block;
 }
 
+@media (min-width: 550px) {
+   .navegador-paginas {
+padding: 30px;
+   }
+
+}
 .logo-principal-blanco img {
     width: 200px;
     height: auto;
+    padding-bottom: 20px;
 }
 
 .logo-principal-blanco {
@@ -465,16 +472,16 @@ footer {
 .navegador-paginas{
 padding-left: 15px;
 padding-right: 15px;
-padding-bottom: 10px;
+padding-bottom: 20px;
 }
-.ul-contenedor {
+/* .ul-contenedor {
     display: none;
-}
+} */
 
 @media (min-width: 550px){
     .ul-contenedor{
         justify-content: center;
-        display: flex;
+        /* display: flex; */
     }
 }
 
@@ -483,45 +490,36 @@ padding-bottom: 10px;
         display: flex;
         justify-content: flex-start;
     }
-
+    
     .navegador-paginas {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 0 200px;
+        padding-top: 20px;
     }
 }
 
-.contenedor-nav-paginas {
-    background-color: #2A3040;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
 
 @media (min-width: 550px) {
     .contenedor-nav-paginas {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
 }
 
-@media (min-width:550px) {
-    .icon-menu-paginas {
-        display: none !important;
-    }
-}
 
 .menu-ham img{
     width: 35px;
 }
 
 .menu-ham-paginas {
-    display: flex ;
-    justify-content: end;
-    align-items: center;
+  display: flex;
+  display: inline-block;
+  margin-bottom: -40px;
 }
+
 
 .boton-icono-nav {
     border-radius: 30px 30px 30px 30px;
@@ -549,13 +547,13 @@ padding-bottom: 10px;
     .iconos-del-nav {
         order: 2;
     }
-  
-.nav-lista li a{
-    text-decoration: none;
-    color: #EAEBEB;
-    font-size: 18px; 
-}
-
+    
+    .nav-lista li a{
+        text-decoration: none;
+        color: #EAEBEB;
+        font-size: 18px; 
+    }
+    
 
     .nav-lista {
         position: relative;
@@ -569,10 +567,8 @@ padding-bottom: 10px;
     display: flex;
     justify-content: end;
     flex-direction: row;
-    width: 100%;
+    /* width: 100%; */
     height: auto;
-    padding-left: 20px;
-
 }
 
 @media (min-width:550px) {
@@ -583,18 +579,16 @@ padding-bottom: 10px;
     }
 }
 
-.iconos-del-nav {
+/* .iconos-del-nav {
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: 10px;
     margin-top: 8px;
     margin-left: -50px;
-}
+} */
 
-.contenedor-nav-paginas .icon-menu-paginas {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-}
+
 
 .icon-menu-paginas {
     width: auto;
@@ -640,27 +634,27 @@ padding-bottom: 10px;
             list-style-type: none;
             text-decoration:none;}
             }
-   
-    
-
-    .icon-menu-paginas {
-        display: none !important;
-    }
-
-
-
-
-/* //TRABAJA CON NOSOTROS// */
-
-.banner-buscar-trabajo {
-    /* width: 80%; */
-    height: 200px;
-    background-color: #D9D9D9;
-    position: absolute;
-    top: 240px;
-    padding: 0 80px;
-}
-
+            
+            
+            
+            .icon-menu-paginas {
+                display: none !important;
+            }
+            
+            
+            
+            
+            /* //TRABAJA CON NOSOTROS// */
+            
+            .banner-buscar-trabajo {
+                /* width: 80%; */
+                height: 200px;
+                background-color: #D9D9D9;
+                position: absolute;
+                top: 240px;
+                padding: 0 80px;
+            }
+            
 .titulo-banner-trabajo h2 {
     padding-top: 20px;
     padding-bottom: 20px;

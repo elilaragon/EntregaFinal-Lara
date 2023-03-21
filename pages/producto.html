@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kofe</title>
     <link rel="shortcut icon" href="./multimedia/img/noun-fossil-3159389.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -20,11 +20,11 @@
 <body>
     <header>
         <div class="navegador-paginas">
-            <div class="logo-principal-blanco">
+            <div class="logo-principal-blanco col-12 col-md-3 ">
                 <a href="../index.html" alt="volver al inicio"><img src="../multimedia/img/logo_kofe_blanco.svg"></a>
             </div>
-            <nav class="contenedor-nav-paginas col-12 col-md-4">
-                <div class="dropdown menu-ham-paginas">
+            <nav class="contenedor-nav-paginas col-3 col-md-6">
+                <div class="dropdown menu-ham-paginas d-block d-md-none">
                     <button class="btn btn-secondary dropdown-item menu-ham" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         <img src="../multimedia/img/menu_hambueguesa.svg">
@@ -35,7 +35,7 @@
                         <li><a class="dropdown-item" href="./sobrenosotros.html">Nosotros</a></li>
                     </ul>
                 </div>
-                <div class="ul-contenedor col-12 col-md-auto">
+                <div class="ul-contenedor col-9 col-md-auto d-none d-md-flex">
                     <ul class="nav-lista">
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="./Info.html">Info</a></li>
@@ -44,20 +44,34 @@
                         <li><a href="./trabajaconnosotros.html" target="_blank">Empleo</a></li>
                     </ul>
                 </div>
-                <div class="iconos-del-nav col-12 col-md-4">
-                    <div class="contendor-iconos-nav">
-                        <button class="boton-icono-nav">
-                            <img src="../multimedia/img/🦆 icon _search_.svg" alt="">
-                        </button>
-                        <button class="boton-icono-nav">
-                            <img src="../multimedia/img/🦆 icon _person_.svg" alt="">
-                        </button>
-                        <button class="boton-icono-nav">
-                            <img src="../multimedia/img/🦆 icon _shopping cart_.svg" alt="">
-                        </button>
-                    </div>
-                </div>
             </nav>
+        
+            <div class="iconos-del-nav col-12 col-md-3">
+                <!-- <nav class="contenedor-nav-paginas">
+                    <div class="dropdown menu-ham-paginas d-block d-md-none">
+                        <button class="btn btn-secondary dropdown-item menu-ham" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="../multimedia/img/menu_hambueguesa.svg">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./producto.html">Productos</a></li>
+                            <li><a class="dropdown-item" href="./trabajaconnosotros.html">Empleo</a></li>
+                            <li><a class="dropdown-item" href="./sobrenosotros.html">Nosotros</a></li>
+                        </ul>
+                    </div>
+                </nav> -->
+                <div class="contendor-iconos-nav">
+                    <button class="boton-icono-nav">
+                        <img src="../multimedia/img/🦆 icon _search_.svg" alt="">
+                    </button>
+                    <button class="boton-icono-nav">
+                        <img src="../multimedia/img/🦆 icon _person_.svg" alt="">
+                    </button>
+                    <button class="boton-icono-nav">
+                        <img src="../multimedia/img/🦆 icon _shopping cart_.svg" alt="">
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
     <div class="banner-rebajas">
