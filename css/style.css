@@ -128,10 +128,11 @@ body {
     border-color: #333; */
     padding: 12px;
     max-height: fit-content;
-    /* box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19); */
     transition: 0.4s;
     max-width: 69%;
     display: block;
+    border-bottom:#3F525A 0.75px solid;
+    padding: 30px;
 }
 
 @media (min-width: 550px) {
@@ -142,18 +143,20 @@ body {
         padding: 16px;
         height: auto;
         max-width: 100%;
+        border-bottom: none;
     }
 }
 
-.tarjeta-de-producto:hover {
+/* .tarjeta-de-producto:hover {
     transform: scale(1.05);
-}
+} */
 
 
 .imagen-principal-tarjeta img {
     height: auto;
     max-width: 100%;
     object-fit: cover;
+    border-radius: 10px ;
 }
 
 @media (min-width: 550px) {
@@ -311,7 +314,6 @@ body {
 
 .contenedor-de-tarjetas {
     display: flex;
-    margin-top: 30px;
     flex-wrap: wrap;
 }
 
@@ -328,14 +330,8 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-
 }
 
-@media (min-width:1200px) {
-    .carrusel-de-productos {
-        width: 1200px;
-    }
-}
 
 .chip-cesta-compra {
     margin-top: -10px;
@@ -347,6 +343,7 @@ body {
     border-radius: 25px;
     background-color: #3F525A;
     font-weight: 600;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.12);
 }
 
 
@@ -354,10 +351,12 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
+
 }
 
 .chip-cesta-compra:hover {
     background: #617077;
+   
 }
 
 .linea-horizontal-secciones {
@@ -376,11 +375,19 @@ body {
     width: 100%;
 }
 
+@media (min-width: 550px){
+    .tarjeta-de-receta{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 
 .imagen-tarjeta-recetas img {
-    max-width: 90%;
     height: auto;
-    border-radius: 12px;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 10;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
@@ -406,8 +413,8 @@ footer {
     width: 120px;
     height: auto;
     padding-left: 8px;
-
 }
+
 
 .contenedor-nivel-de-dificultad-recetas {
     display: flex;
@@ -420,6 +427,7 @@ footer {
     font-size: 13px;
     font-weight: 600;
     align-items: start;
+    padding-top: 4px;
 }
 
 .carrusel-video-recetas {
@@ -428,10 +436,11 @@ footer {
     margin-right: auto;
 }
 
+
 .contenedor-tarjetas-recetas {
     margin-top: 5px;
     margin-bottom: 50px;
-    display: flex;
+    display: block;
 }
 
 @media (min-width:550px) {
