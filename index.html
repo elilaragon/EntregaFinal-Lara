@@ -19,34 +19,51 @@
 </head>
 
 <body>
-    <header class="header-principal">
-        <div class="logo-principal">
-            <img src="./multimedia/img/Logo_kofe.svg" alt="">
+    <div class="navegador-paginas">
+        <div class="logo-principal-blanco col-12 col-md-3 ">
+            <a href="../index.html" alt="volver al inicio"><img src="../multimedia/img/logo_kofe_blanco.svg"></a>
         </div>
-        <div class="contenedor-navegador-principal">
-            <i class="icon-nav fa-solid fa-bars"></i>
-            <nav class="navegador-principal">
-                <ul class="navegador">
-                    <!-- <li><a href="./index.html">Inicio</a></li> -->
-                    <!-- <li><a href="./pages/Info.html">Info</a></li> -->
-                    <li><a href="./pages/producto.html">Productos</a></li>
-                    <li><a href="./pages/sobrenosotros.html">Nosotros</a></li>
-                    <li><a href="./pages/trabajaconnosotros.html" target="_blank">Empleo</a></li>
+        <nav class="contenedor-nav-paginas col-3 col-md-6">
+            <div class="dropdown menu-ham-paginas d-block d-md-none">
+                <button class="btn btn-secondary dropdown-item menu-ham" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="../multimedia/img/menu_hambueguesa.svg">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./producto.html">Productos</a></li>
+                    <li><a class="dropdown-item" href="./trabajaconnosotros.html">Empleo</a></li>
+                    <li><a class="dropdown-item" href="./sobrenosotros.html">Nosotros</a></li>
                 </ul>
-            </nav>
+            </div>
+            <div class="ul-contenedor col-9 col-md-auto d-none d-md-flex">
+                <ul class="nav-lista">
+                    <!-- <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./Info.html">Info</a></li> -->
+                    <li><a href="./pages/productos.html">Productos</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/empleo.html" target="_blank">Empleo</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="iconos-del-nav col-12 col-md-3">
+            <div class="contendor-iconos-nav">
+                <button class="boton-icono-nav">
+                    <img src="../multimedia/img/🦆 icon _search_.svg" alt="">
+                </button>
+                <button class="boton-icono-nav">
+                    <img src="../multimedia/img/🦆 icon _person_.svg" alt="">
+                </button>
+                <button class="boton-icono-nav">
+                    <img src="../multimedia/img/🦆 icon _shopping cart_.svg" alt="">
+                </button>
+            </div>
         </div>
-    </header>
-
-    <div class="banner-rebajas">
-        <p>Envios gratis a partir de 30€ de pedido</p>
     </div>
-
-    <div class="banner-promociones">
-        <p class="promociones-titulo"> REBAJAS </p>
-        <span> &nbsp;50%</span>
-    </div>
-
-    </div>
+</header>
+<div class="banner-rebajas">
+    <p>Envios gratis a partir de 30€ de pedido</p>
+</div>
     <main>
         <div class="carrusel-de-productos container px-0">
             <h2 class="titulo-de-secciones">ESPECIALES</h2>
@@ -119,12 +136,15 @@
                 <hr class="linea-horizontal-secciones">
             </div>
         </div>
-
+        
         <div class="carrusel-video-recetas container px-0 mx-auto">
             <h2 class="titulo-de-secciones">RECETAS</h2>
             <div class="contenedor-tarjetas-recetas">
                 <div class=" contenedor-tarjetas col-12 col-md-4 p-2 ">
                     <div class="tarjeta-de-receta mx-auto">
+                        <div class="icono-circle-pay">
+                            <img src="./multimedia/img/🦆 icon _play circle.png" alt="">
+                        </div>
                         <div class="imagen-tarjeta-recetas">
                             <img src="./multimedia/img/receta-tarta.png" alt="">
                             <p class="titulo-principal-tarjeta-recetas mb-0">Tarta de café</p>
@@ -139,6 +159,9 @@
                 </div>
                 <div class=" contenedor-tarjetas col-12 col-md-4 p-2 ">
                     <div class="tarjeta-de-receta mx-auto">
+                        <div class="icono-circle-pay">
+                            <img src="./multimedia/img/🦆 icon _play circle.png" alt="">
+                        </div>
                         <div class="imagen-tarjeta-recetas ">
                             <img src="./multimedia/img/receta-tiramisu.png" alt="">
                             <p class="titulo-principal-tarjeta-recetas mb-0">Tiramisú</p>
@@ -152,6 +175,9 @@
                     </div>
                 </div><div class=" contenedor-tarjetas col-12 col-md-4 p-2 ">
                     <div class="tarjeta-de-receta mx-auto">
+                        <div class="icono-circle-pay">
+                            <img src="./multimedia/img/🦆 icon _play circle.png" alt="">
+                        </div>
                         <div class="imagen-tarjeta-recetas">
                             <img src="./multimedia/img/receta-mantequilla.png" alt="">
                             <p class="titulo-principal-tarjeta-recetas mb-0">Mantequilla de café</p>

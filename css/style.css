@@ -131,7 +131,7 @@ body {
     transition: 0.4s;
     max-width: 69%;
     display: block;
-    border-bottom:#3F525A 0.75px solid;
+    border-bottom: #3F525A 0.75px solid;
     padding: 30px;
 }
 
@@ -156,7 +156,7 @@ body {
     height: auto;
     max-width: 100%;
     object-fit: cover;
-    border-radius: 10px ;
+    border-radius: 10px;
 }
 
 @media (min-width: 550px) {
@@ -198,14 +198,16 @@ body {
     }
 }
 
-.texto-origen{
+.texto-origen {
     font-size: 13px;
     font-weight: 600;
 }
-.texto-tarjeta-origen{
+
+.texto-tarjeta-origen {
     font-size: 13px;
     font-weight: 600;
 }
+
 .texto-tarjeta {
     font-size: 12px;
     font-weight: 500;
@@ -229,7 +231,7 @@ body {
 .texto-tarjeta-gramos {
     font-weight: 700;
     font-size: 16px;
-    color:#F06B5F;
+    color: #F06B5F;
 }
 
 .banner-rebajas {
@@ -356,7 +358,7 @@ body {
 
 .chip-cesta-compra:hover {
     background: #617077;
-   
+
 }
 
 .linea-horizontal-secciones {
@@ -375,8 +377,8 @@ body {
     width: 100%;
 }
 
-@media (min-width: 550px){
-    .tarjeta-de-receta{
+@media (min-width: 550px) {
+    .tarjeta-de-receta {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -392,6 +394,13 @@ body {
     margin-bottom: 10;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 }
+
+.icono-circle-pay {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 140px;
+}
+
 
 footer {
     display: flex;
@@ -658,7 +667,7 @@ footer {
     position: relative;
     height: 200px;
     width: auto;
-    background-image: url("https://res.cloudinary.com/elizapardo/image/upload/v1677669932/Web%20Kofe/pexels-negative-space-34079_zlcexi.jpg");
+    background-image: url("../multimedia/img/banner-trabajo.png");
 }
 
 @media (min-width: 1200px) {
