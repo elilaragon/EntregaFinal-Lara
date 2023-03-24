@@ -180,6 +180,13 @@ body {
     line-height: 20px;
 }
 
+.titulo-principal-tarjeta-clase{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 4px;
+    color: #3F525A;
+}
+
 .boton-principal {
     background-color: aqua;
     padding: 10px;
@@ -216,7 +223,6 @@ body {
 .texto-tarjeta {
     font-size: 12px;
     font-weight: 500;
-    margin-top: 8px;
     margin-bottom: 15px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -229,6 +235,7 @@ body {
     .texto-tarjeta {
         font-size: 14px;
         font-weight: 500;
+        margin-top: -13px;
     }
 }
 
