@@ -75,9 +75,9 @@ body {
     display: flex;
 }
 
-.contenedor-navegador-principal {
+/* .contenedor-navegador-principal {
     position: relative;
-}
+} */
 
 
 @media (min-width:550px) {
@@ -104,6 +104,11 @@ body {
     }
 }
 
+.banner-nav-principal {
+    display: flex;
+    position: relative;
+
+}
 
 .navegador-principal li a {
     display: block;
@@ -115,7 +120,7 @@ body {
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 550px) {
     .navegador-principal li a {
         text-align: center;
         font-size: 16px;
@@ -258,15 +263,17 @@ body {
 
 .banner-promociones {
     display: flex;
+    flex-direction: column;
+    padding-right: 35px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left center;
     position: relative;
-    height: 200px;
+    height: 150px;
     width: auto;
-    background-image: url("https://res.cloudinary.com/elizapardo/image/upload/v1677669932/Web%20Kofe/pexels-negative-space-34079_zlcexi.jpg");
+    background-image: url(../multimedia/img/banner-principal-rebajas.png);
 }
 
 @media (min-width: 550px) {
@@ -287,32 +294,47 @@ body {
         font-weight: 400;
         padding-top: 40px;
     }
-
 }
 
 .promociones-titulo {
-    font-weight: 400;
-    font-size: 50px;
+    font-weight: 600;
+    font-size: 45px;
     color: #EAEBEB;
+   padding-top: 30px;
+   margin-bottom: none;
 }
 
-@media (min-width: 550px) {
-    .promociones-titulo {
-        font-size: 90px;
-    }
-
-    .banner-promociones span {
-        font-size: 130px;
-    }
-
-}
-
-.banner-promociones span {
+.promociones-titulo-numero {
     color: #EAEBEB;
     font-weight: 800;
-    font-size: 90px;
     text-align: center;
+    font-size: 50px;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    justify-content: end;
+
 }
+@media (min-width: 550px) {
+    .promociones-titulo {
+        font-size: 120px;
+        font-weight: 400;
+    }
+
+    .promociones-titulo-numero {
+        font-size: 150px;
+        color: #D9D9D9;
+    }
+.banner-promociones{
+    font-weight: 600;
+    font-size: 100px;
+    color: #EAEBEB;
+    display: flex;
+    justify-content: end;
+}
+}
+
+
 
 .contenedor-de-tarjetas {
     display: flex;
@@ -324,7 +346,6 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
     }
 }
 
@@ -409,7 +430,22 @@ footer {
     width: 100%;
     height: 40px;
     background-color: #2A3040;
+    position: absolute;
 }
+
+.chat-ayuda {
+    display: flex;
+    justify-content: end;
+}
+
+.chat-ayuda img {
+    width: 200px;
+    height: auto;
+    margin-top: -70px;
+    padding-bottom: 60px;
+    margin-right: 100px;
+}
+
 
 .texto-del-footer {
     background-color: transparent;
