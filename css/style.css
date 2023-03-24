@@ -280,6 +280,12 @@ body {
     .banner-promociones {
         height: 300px;
         width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        justify-content: end;
+        font-weight: 600;
+        font-size: 100px;
     }
 }
 
@@ -299,15 +305,15 @@ body {
 .promociones-titulo {
     font-weight: 600;
     font-size: 45px;
-    color: #EAEBEB;
+    color:#D9D9D9;
    padding-top: 30px;
    margin-bottom: none;
 }
 
 .promociones-titulo-numero {
-    color: #EAEBEB;
+    color: #D9D9D9;
     font-weight: 800;
-    text-align: center;
+    align-items: center;
     font-size: 50px;
     display: flex;
     margin-top: -30px;
@@ -324,14 +330,8 @@ body {
     .promociones-titulo-numero {
         font-size: 150px;
         color: #D9D9D9;
+        margin-top: 50px;
     }
-.banner-promociones{
-    font-weight: 600;
-    font-size: 100px;
-    color: #EAEBEB;
-    display: flex;
-    justify-content: end;
-}
 }
 
 
@@ -441,10 +441,11 @@ footer {
 .chat-ayuda img {
     width: 200px;
     height: auto;
-    margin-top: -70px;
-    padding-bottom: 60px;
-    margin-right: 100px;
+    margin-top: -30px;
+    padding-bottom: 40px;
+    margin-right: 40px;
 }
+
 
 
 .texto-del-footer {
