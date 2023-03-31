@@ -44,24 +44,24 @@ body {
     }
 } */
 
-/* .icon-nav {
+.icon-nav {
     width: auto;
     height: auto;
     font-size: 22px;
     color: #2A3040;
     position: relative;
-} */
+}
 
-/* .navegador-principal {
+.navegador-principal {
     position: absolute;
     right: 0;
     display: flex;
     top: 22;
     z-index: 1000;
-} */
+}
 
 
-/* .navegador {
+.navegador {
     list-style-type: none;
     overflow: hidden;
     font-weight: 600;
@@ -73,11 +73,11 @@ body {
     align-items: start;
     text-align: center;
     display: flex;
-} */
+}
 
-/* .contenedor-navegador-principal {
+.contenedor-navegador-principal {
     position: relative;
-} */
+}
 
 
 /* @media (min-width:550px) {
