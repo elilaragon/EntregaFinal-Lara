@@ -1,0 +1,164 @@
+.contenedor {
+    &-tarjetas {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        &-tarjeta {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+
+            &-receta {
+                margin-top: 5px;
+                margin-bottom: 50px;
+                display: block;
+
+                .tarjeta {
+                    &-receta {
+                        width: 100%;
+
+                        &-icono-play {
+                            position: absolute;
+                            margin-top: 100px;
+                            margin-left: 140px;
+                        }
+
+                        &-imagen {
+                            img {
+                                height: auto;
+                                width: 100%;
+                                object-fit: cover;
+                                height: auto;
+                                border-radius: 10px;
+                                margin-top: 20px;
+                                margin-bottom: 10;
+                                box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+                            }
+                        }
+
+                        &-titulo {
+                            padding-top: 10px;
+                            font-weight: 600;
+                            font-size: 18px;
+                        }
+
+                        &-dificultad {
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: wrap;
+
+                            &-texto {
+                                font-size: 13px;
+                                font-weight: 600;
+                                align-items: start;
+                                padding-top: 4px;
+                            }
+
+                            &-imagen {
+                                img {
+                                    width: 120px;
+                                    height: auto;
+                                    padding-left: 8px;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+
+        &-producto {
+            display: flex;
+            flex-wrap: wrap;
+
+            .tarjeta {
+                &-producto {
+                    padding: 12px;
+                    max-height: fit-content;
+                    transition: 0.4s;
+                    max-width: 69%;
+                    display: block;
+                    border-bottom: #3F525A 0.75px solid;
+                    padding: 30px;
+
+                    &-imagen {
+                        img {
+                            height: auto;
+                            max-width: 100%;
+                            object-fit: cover;
+                            border-radius: 10px;
+                        }
+                    }
+
+                    &-titulo {
+                        padding-top: 10px;
+                        text-align: left;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 20px;
+                        padding-bottom: 16px;
+                    }
+
+                    &-texto {
+                        font-size: 12px;
+                        font-weight: 500;
+                        margin-bottom: 15px;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+
+                        &-origen {
+                            font-size: 13px;
+                            font-weight: 600;
+
+                            .texto-origen {
+                                font-size: 13px;
+                                font-weight: 600;
+                            }
+                        }
+
+                        &-gramos {
+                            font-weight: 700;
+                            font-size: 16px;
+                            color: $colornaranja;
+                        }
+                    }
+
+                    .botonchip-compra {
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-top: 10px;
+
+                        &-icono {
+                            margin-top: -10px;
+                            padding: 0 15px;
+                            height: 30px;
+                            color: #EAEBEB;
+                            font-size: 12px;
+                            border-color: transparent;
+                            border-radius: 25px;
+                            background-color: #3F525A;
+                            font-weight: 600;
+                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.12);
+
+                            &:hover {
+                                background: #617077;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+
+
+.chip-compra {}

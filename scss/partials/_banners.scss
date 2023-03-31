@@ -1,0 +1,53 @@
+.banner {
+    &-promociones {
+        display: flex;
+        flex-direction: column;
+        padding-right: 35px;
+        justify-content: center;
+        align-items: flex-end;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left center;
+        position: relative;
+        height: 150px;
+        width: auto;
+        background-image: url(../multimedia/img/banner-principal-rebajas.png);
+
+        &-titulo {
+            font-weight: 600;
+            font-size: 45px;
+            color: #D9D9D9;
+            padding-top: 30px;
+            margin-bottom: none;
+    
+            &-numero {
+                color: #D9D9D9;
+                font-weight: 800;
+                align-items: center;
+                font-size: 50px;
+                display: flex;
+                margin-top: -30px;
+                margin-bottom: 30px;
+                justify-content: end;
+            }
+        }
+    }
+
+
+    &-rebajas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #F06B5F;
+        padding-top: 12px;
+
+        p {
+            text-transform: uppercase;
+            font-weight: 400;
+            background-color: transparent;
+            color: #EAEBEB;
+        }
+    }
+}
+

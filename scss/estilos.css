@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+* body {
+  background-color: #EAEBEB;
+}
+
+.navegador {
+  background-color: #2A3040;
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+.navegador .logo {
+  display: flex;
+  justify-content: center;
+}
+.navegador .logo img {
+  width: 200px;
+  height: auto;
+  padding-bottom: 20px;
+}
+.navegador .menu {
+  display: flex;
+  display: inline-block;
+  margin-bottom: -40px;
+}
+.navegador .menu img {
+  width: 35px;
+}
+.navegador .boton-icono {
+  border-radius: 30px 30px 30px 30px;
+  border-color: transparent;
+  background-color: #EAEBEB;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.navegador .boton-icono img {
+  height: 20px;
+  width: 20px;
+}
+.navegador .boton-icono:last-child {
+  margin-right: 0;
+}
+.navegador .iconos-contenedor {
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  /* width: 100%; */
+  height: auto;
+}
+
+.banner-promociones {
+  display: flex;
+  flex-direction: column;
+  padding-right: 35px;
+  justify-content: center;
+  align-items: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  position: relative;
+  height: 150px;
+  width: auto;
+  background-image: url(../multimedia/img/banner-principal-rebajas.png);
+}
+.banner-promociones-titulo {
+  font-weight: 600;
+  font-size: 45px;
+  color: #D9D9D9;
+  padding-top: 30px;
+  margin-bottom: none;
+}
+.banner-promociones-titulo-numero {
+  color: #D9D9D9;
+  font-weight: 800;
+  align-items: center;
+  font-size: 50px;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  justify-content: end;
+}
+.banner-rebajas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #F06B5F;
+  padding-top: 12px;
+}
+.banner-rebajas p {
+  text-transform: uppercase;
+  font-weight: 400;
+  background-color: transparent;
+  color: #EAEBEB;
+}
+
+.contenedor-tarjetas {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contenedor-tarjetas-tarjeta {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contenedor-tarjetas-tarjeta-receta {
+  margin-top: 5px;
+  margin-bottom: 50px;
+  display: block;
+}
+.contenedor-tarjetas-tarjeta-receta .tarjeta-receta {
+  width: 100%;
+}
+.contenedor-tarjetas-tarjeta-receta .tarjeta-receta-icono-play {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 140px;
+}
+.contenedor-tarjetas-tarjeta-receta .tarjeta-receta-imagen img {
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 10;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.contenedor-tarjetas-tarjeta-receta .tarjeta-receta-titulo {
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.contenedor-tarjetas-tarjeta-receta .tarjeta-receta-dificultad {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contenedor-tarjetas-tarjeta-receta .tarjeta-receta-dificultad-texto {
+  font-size: 13px;
+  font-weight: 600;
+  align-items: start;
+  padding-top: 4px;
+}
+.contenedor-tarjetas-tarjeta-receta .tarjeta-receta-dificultad-imagen img {
+  width: 120px;
+  height: auto;
+  padding-left: 8px;
+}
+.contenedor-tarjetas-producto {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contenedor-tarjetas-producto .tarjeta-producto {
+  padding: 12px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  transition: 0.4s;
+  max-width: 69%;
+  display: block;
+  border-bottom: #3F525A 0.75px solid;
+  padding: 30px;
+}
+.contenedor-tarjetas-producto .tarjeta-producto-imagen img {
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.contenedor-tarjetas-producto .tarjeta-producto-titulo {
+  padding-top: 10px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  padding-bottom: 16px;
+}
+.contenedor-tarjetas-producto .tarjeta-producto-texto {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.contenedor-tarjetas-producto .tarjeta-producto-texto-origen {
+  font-size: 13px;
+  font-weight: 600;
+}
+.contenedor-tarjetas-producto .tarjeta-producto-texto-origen .texto-origen {
+  font-size: 13px;
+  font-weight: 600;
+}
+.contenedor-tarjetas-producto .tarjeta-producto-texto-gramos {
+  font-weight: 700;
+  font-size: 16px;
+  color: #F06B5F;
+}
+.contenedor-tarjetas-producto .tarjeta-producto .botonchip-compra {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.contenedor-tarjetas-producto .tarjeta-producto .botonchip-compra-icono {
+  margin-top: -10px;
+  padding: 0 15px;
+  height: 30px;
+  color: #EAEBEB;
+  font-size: 12px;
+  border-color: transparent;
+  border-radius: 25px;
+  background-color: #3F525A;
+  font-weight: 600;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.12);
+}
+.contenedor-tarjetas-producto .tarjeta-producto .botonchip-compra-icono:hover {
+  background: #617077;
+}/*# sourceMappingURL=estilos.css.map */
