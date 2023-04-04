@@ -34,68 +34,65 @@
                     max-width: 100%;
                     border-bottom: none !important;
                 }
-            }
-        }
 
-    }
-
-}
-
-&-producto {
-
-
-
-
-    &-imagen {
-        img {
-            @media (min-width: 550px) {
-                width: 100%;
-                height: 200px;
-            }
-        }
-    }
-
-    .botonchip {
-        &-compra {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 10px;
-
-            &-icono {
-                margin-top: -10px;
-                padding: 0 15px;
-                height: 30px;
-                color: #EAEBEB;
-                font-size: 12px;
-                border-color: transparent;
-                border-radius: 25px;
-                background-color: #3F525A;
-                font-weight: 600;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.12);
-
-                &:hover {
-                    background: #617077;
+                &-imagen {
+                    img {
+                        @media (min-width: 550px) {
+                            width: 100%;
+                            height: 200px;
+                        }
+                    }
                 }
             }
         }
+
     }
+
 }
 
-&-receta {
-    margin-top: 5px;
-    margin-bottom: 50px;
-    display: block;
 
-    @media (min-width: 550px) {
-        padding-left: 10px;
-        padding-right: 10px;
+
+.botonchip {
+    &-compra {
         display: flex;
-        align-items: center;
+        justify-content: flex-end;
+        margin-top: 10px;
 
+        &-icono {
+            margin-top: -10px;
+            padding: 0 15px;
+            height: 30px;
+            color: #EAEBEB;
+            font-size: 12px;
+            border-color: transparent;
+            border-radius: 25px;
+            background-color: #3F525A;
+            font-weight: 600;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.12);
+
+            &:hover {
+                background: #617077;
+            }
+        }
     }
-
-
 }
+
+
+// &-receta {
+//     margin-top: 5px;
+//     margin-bottom: 50px;
+//     display: block;
+
+//     @media (min-width: 550px) {
+//         padding-left: 10px;
+//         padding-right: 10px;
+//         display: flex;
+//         align-items: center;
+
+//     }
+
+
+// }
 
 
 
@@ -213,52 +210,51 @@
                         &-play {
                             position: absolute;
                             margin-top: 100px;
-                            margin-left: 140px;
+                            margin-left: 150px;
+
                         }
                     }
 
-                }
-
-                &-imagen {
-                    img {
-                        height: auto;
-                        width: 100%;
-                        object-fit: cover;
-                        height: auto;
-                        border-radius: 10px;
-                        margin-top: 20px;
-                        margin-bottom: 10;
-                        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+                    &-imagen {
+                        img {
+                            height: auto;
+                            width: 100%;
+                            object-fit: cover;
+                            height: auto;
+                            border-radius: 10px;
+                            margin-top: 20px;
+                            margin-bottom: 10;
+                            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+                        }
                     }
-                }
-            }
 
-
-
-            &-titulo {
-                padding-top: 10px;
-                font-weight: 600;
-                font-size: 18px;
-            }
-
-            &-dificultad {
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
-
-                &-texto {
-                    font-size: 13px;
-                    font-weight: 600;
-                    align-items: start;
-                    padding-top: 4px;
-                }
-
-                &-imagen {
-                    img {
-                        width: 120px;
-                        height: auto;
-                        padding-left: 8px;
+                    &-titulo {
+                        padding-top: 10px;
+                        font-weight: 600;
+                        font-size: 18px;
                     }
+
+                    &-dificultad {
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+
+                        &-texto {
+                            font-size: 13px;
+                            font-weight: 600;
+                            align-items: start;
+                            padding-top: 4px;
+                        }
+
+                        &-imagen {
+                            img {
+                                width: 120px;
+                                height: auto;
+                                padding-left: 8px;
+                            }
+                        }
+                    }
+
                 }
             }
 
@@ -266,7 +262,6 @@
     }
 
 }
-
 
 
 .linea-horizontal-secciones {
@@ -278,6 +273,26 @@
     background-color: #3F525A;
     height: 1px;
 }
+
+
+.contenedor-tarjeta {
+    .contenedor {
+        &-titulo {
+            &-secciones {
+                font-weight: 300;
+                padding-top: 30px;
+                margin-left: 15px;
+
+                @media (min-width: 550px) {
+                    font-weight: 400;
+                    padding-top: 40px;
+                }
+            }
+        }
+    }
+}
+
+
 
 // &-receta {
 //     @media (min-width: 550px) {
