@@ -23,9 +23,9 @@
     }
 
     &-texto {
-        font-size: 10px;
-        padding-left: 200px;
-        padding-right: 20px;
+        font-size: 15px;
+        padding-left: 70px;
+        padding-right: 70px;
         text-align: center;
 
         @media (min-width: 550px) {
@@ -38,12 +38,14 @@
         }
 
         h5 {
-            padding-top: 50px;
+            font-size: 16px;
+            padding-top: 30px;
+            color: $colornaranja;
+            font-weight: 600;
 
             @media (min-width: 550px) {
-
                 font-size: 20px;
-                font-weight: 700;
+                font-weight: 600;
                 padding-top: 40px;
             }
 

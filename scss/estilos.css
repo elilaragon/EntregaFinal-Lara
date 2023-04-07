@@ -756,9 +756,9 @@ footer {
   padding: 100px;
 }
 .historia-texto {
-  font-size: 10px;
-  padding-left: 200px;
-  padding-right: 20px;
+  font-size: 15px;
+  padding-left: 70px;
+  padding-right: 70px;
   text-align: center;
 }
 @media (min-width: 550px) {
@@ -771,12 +771,15 @@ footer {
   }
 }
 .historia-texto h5 {
-  padding-top: 50px;
+  font-size: 16px;
+  padding-top: 30px;
+  color: #F06B5F;
+  font-weight: 600;
 }
 @media (min-width: 550px) {
   .historia-texto h5 {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     padding-top: 40px;
   }
 }
