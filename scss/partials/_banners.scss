@@ -56,7 +56,33 @@
             }
         }
 
-      
+        
+    }
+    &-historia {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left center;
+        height: 200px;
+        width: auto;
+        background-image: url(../../multimedia/img/banner-historia.png);
+        
+
+        @media (min-width: 550px){
+            display: flex;
+            flex-direction: column;
+            padding-right: 35px;
+            justify-content: center;
+            align-items: flex-end;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left center;
+            position: relative;
+            height: 450px;
+            width: auto;
+            background-image: url(../../multimedia/img/banner-historia.png);
+
+        }
+
     }
 
     &-rebajas {

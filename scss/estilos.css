@@ -188,6 +188,30 @@
     padding-right: 100px;
   }
 }
+.banner-historia {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 200px;
+  width: auto;
+  background-image: url(../../multimedia/img/banner-historia.png);
+}
+@media (min-width: 550px) {
+  .banner-historia {
+    display: flex;
+    flex-direction: column;
+    padding-right: 35px;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+    height: 450px;
+    width: auto;
+    background-image: url(../../multimedia/img/banner-historia.png);
+  }
+}
 .banner-rebajas {
   display: flex;
   justify-content: center;
@@ -437,6 +461,7 @@ footer {
   height: 40px;
   background-color: #2A3040;
   position: absolute;
+  margin-top: 40px;
 }
 
 .chat-ayuda {
@@ -459,13 +484,13 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left center;
-  position: relative;
   height: 200px;
   width: auto;
   background-image: url("../multimedia/img/banner-trabajo.png");
 }
 @media (min-width: 550px) {
   .banner-empleo {
+    position: relative;
     height: 300px;
     width: 100%;
     align-items: center;
@@ -529,22 +554,70 @@ footer {
 
 .contenedor-formularios {
   margin-top: 200px;
-  display: flex;
+  display: block;
+  flex-direction: column;
   align-items: center;
+}
+@media (min-width: 550px) {
+  .contenedor-formularios {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.contenedor-formularios-foto {
+  display: block;
+  flex-direction: column;
+}
+@media (min-width: 550px) {
+  .contenedor-formularios-foto {
+    display: flex;
+    justify-content: center;
+  }
+}
+.contenedor-formularios-foto img {
+  width: 250px;
+  height: auto;
+  padding-top: 130px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+}
+@media (min-width: 550px) {
+  .contenedor-formularios-foto img {
+    padding-top: 0;
+    width: 300px;
+    height: auto;
+  }
+}
+.contenedor-formularios-foto .btn-boton-subir {
+  margin: 10px;
+  background-color: #2A3040;
+  border-radius: 40px;
+  color: #EAEBEB;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.12);
+  width: 200px;
+  margin-left: 80px;
+  margin-top: -150px;
+}
+@media (min-width: 550px) {
+  .contenedor-formularios-foto .btn-boton-subir {
+    margin: 10px;
+    background-color: #2A3040;
+    border-radius: 40px;
+    color: #EAEBEB;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.12);
+    width: 200px;
+    margin-left: 100px;
+    margin-top: -60px;
+  }
+}
+.contenedor-formularios-foto .btn-boton-subir:hover {
+  background-color: #3F525A;
+  color: #EAEBEB;
 }
 .contenedor-formularios-formularios {
   border: #2A3040 solid 1px;
   padding: 20px;
   border-radius: 12px;
-}
-.contenedor-formularios-formularios-foto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contenedor-formularios-formularios-foto img {
-  width: 200px;
-  height: auto;
 }
 .contenedor-formularios-formularios .contenedor-formularios {
   border: #2A3040 solid 1px;
@@ -599,23 +672,27 @@ footer {
   font-size: 31px;
   margin-left: 30px;
   margin-right: 30px;
+  text-align: center;
 }
 @media (min-width: 550px) {
   .nos-encanta .titulo-trabajo {
     font-weight: 700;
     font-size: 50px;
     margin-right: 50px;
+    text-align: start;
   }
 }
 .nos-encanta .texto-trabajo {
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 50px;
+  text-align: center;
 }
 @media (min-width: 550px) {
   .nos-encanta .texto-trabajo {
     padding-top: 20px;
     margin-bottom: 20px;
+    text-align: start;
   }
 }
 
@@ -624,15 +701,24 @@ footer {
   justify-content: space-between;
   padding-inline: 100px;
 }
-.contenedor-botones-formulario-botones-formularios {
-  display: flex;
+.contenedor-botones-formulario .botones-formulario {
+  display: block;
   justify-content: center;
+  width: auto;
+  height: 50px;
+  margin-left: 20px;
+  margin-bottom: 50px;
 }
-.contenedor-botones-formulario-botones-formularios .btn-boton-subir {
+@media (min-width: 550px) {
+  .contenedor-botones-formulario .botones-formulario {
+    display: flex;
+  }
+}
+.contenedor-botones-formulario .botones-formulario .boton-subir {
   background-color: #2A3040;
   color: #EAEBEB;
 }
-.contenedor-botones-formulario-botones-formularios .btn-boton-enviar {
+.contenedor-botones-formulario .botones-formulario .boton-enviar {
   background-color: #2A3040;
   color: #EAEBEB;
 }
@@ -646,4 +732,87 @@ footer {
 .linea-horizontal-formularios {
   margin-top: 30px;
   background-color: #2A3040;
+}
+
+.historia-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.historia-titulo h1 {
+  font-size: 40px;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 550px) {
+  .historia-titulo h1 {
+    font-size: 80px;
+    display: flex;
+  }
+}
+.historia-titulo h5 {
+  padding: 100px;
+}
+.historia-texto {
+  font-size: 10px;
+  padding-left: 200px;
+  padding-right: 20px;
+  text-align: center;
+}
+@media (min-width: 550px) {
+  .historia-texto {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 10px;
+    font-size: 22px;
+    text-align: center;
+  }
+}
+.historia-texto h5 {
+  padding-top: 50px;
+}
+@media (min-width: 550px) {
+  .historia-texto h5 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 40px;
+  }
+}
+
+.contenedor {
+  display: block;
+}
+@media (min-width: 550px) {
+  .contenedor {
+    display: flex;
+    align-items: center;
+  }
+}
+.contenedor-historia-foto {
+  display: block;
+}
+@media (min-width: 550px) {
+  .contenedor-historia-foto {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+  }
+}
+.contenedor-historia-foto img {
+  width: auto;
+  height: 200px;
+  margin-top: 30px;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+  padding-bottom: 10px;
+}
+@media (min-width: 550px) {
+  .contenedor-historia-foto img {
+    width: auto;
+    height: 600px;
+    margin: 30px;
+  }
 }/*# sourceMappingURL=estilos.css.map */
