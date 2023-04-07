@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kofe</title>
+    <meta name="description" content="Quienes somos">
+    <meta name="keywords" content="cafe, molido, natural, grano, compra al mayor">
     <link rel="shortcut icon" href="../multimedia/img/logo-mini-web.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../scss/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
@@ -19,12 +21,12 @@
 
 <body>
     <header>
-        <div class="navegador-paginas">
-            <div class="logo-principal-blanco col-12 col-md-3 ">
+        <div class="navegador">
+            <div class="navegador-logo col-12 col-md-3 ">
                 <a href="../index.html" alt="volver al inicio"><img src="../multimedia/img/logo_kofe_blanco.svg"></a>
             </div>
-            <nav class="contenedor-nav-paginas col-3 col-md-6">
-                <div class="dropdown menu-ham-paginas d-block d-md-none">
+            <nav class="navegador-contenedor col-3 col-md-6">
+                <div class="dropdown navegador-menu d-block d-md-none">
                     <button class="btn btn-secondary dropdown-item menu-ham" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         <img src="../multimedia/img/menu_hambueguesa.svg">
@@ -35,8 +37,8 @@
                     <li><a class="dropdown-item" href="./nosotros.html">Nosotros</a></li>
                     </ul>
                 </div>
-                <div class="ul-contenedor col-9 col-md-auto d-none d-md-flex">
-                    <ul class="nav-lista">
+                <div class="navegador-ul-contenedor col-9 col-md-auto d-none d-md-flex">
+                    <ul class="navegador-ul-lista">
                         <!-- <li><a href="../index.html">Inicio</a></li>
                         <li><a href="./Info.html">Info</a></li> -->
                         <li><a href="./productos.html">Productos</a></li>
@@ -46,15 +48,15 @@
                 </div>
             </nav>
 
-            <div class="iconos-del-nav col-12 col-md-3">
-                <div class="contendor-iconos-nav">
-                    <button class="boton-icono-nav">
+            <div class="navegador-icono col-12 col-md-3">
+                <div class="navegador-icono-contenedor">
+                    <button class="navegador-boton-icono">
                         <img src="../multimedia/img/🦆 icon _search_.svg" alt="">
                     </button>
-                    <button class="boton-icono-nav">
+                    <button class="navegador-boton-icono">
                         <img src="../multimedia/img/🦆 icon _person_.svg" alt="">
                     </button>
-                    <button class="boton-icono-nav">
+                    <button class="navegador-boton-icono">
                         <img src="../multimedia/img/🦆 icon _shopping cart_.svg" alt="">
                     </button>
                 </div>
@@ -66,13 +68,13 @@
     </div>
     </header>
     <main>
-        <div class="banner-busca-empleo">
-            <div class="banner-buscar-trabajo container">
-                <div class="titulo-banner-trabajo">
+        <div class="banner-empleo">
+            <div class="banner-empleo-buscar container">
+                <div class="banner-empleo-titulo">
                     <h2>Encuentra más que un trabajo</h2>
                 </div>
-                <div class="selectores-de-trabajo">
-                    <div class="col-12 col-md-5 pr-4">
+                <div class="banner-empleo-selector">
+                    <div class="col-12 col-md-5 pr-4 mb-2">
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Puestos</option>
                             <option value="1">One</option>
@@ -80,7 +82,7 @@
                             <option value="3">Three</option>
                         </select>
                     </div>
-                    <div class="col-12 col-md-5 px-4">
+                    <div class="col-12 col-md-5 px-4 mb-2">
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Ciudades</option>
                             <option value="1">One</option>
@@ -88,7 +90,7 @@
                             <option value="3">Three</option>
                         </select>
                     </div>
-                    <div class="col-12 col-md-2 pl-4">
+                    <div class="col-12 col-md-2 pl-4 mb-2">
                         <button type="button" class="btn boton-buscar px-4">Buscar</button>
                     </div>
                 </div>
@@ -96,73 +98,49 @@
         </div>
         <div class="container contenedor-formularios">
             <div class="col-12 col-md-4">
-                <div class="foto-cv">
+                <div class="contenedor-formularios-foto">
                     <img src="../multimedia/img/imagen-empleo-usuario.png" class="rounded float-start" alt="...">
                     <button type="button" class="btn btn-boton-subir-foto px-4">Subir foto</button>
                 </div>
             </div>
             <div class="col-12 col-md-8">
                 <div class="formularios">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">Nombre</span>
-                        <input type="text" class="form-control" placeholder="Lomo" aria-label="Username"
-                            aria-describedby="basic-addon1">
-                    </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">Apellido</span>
-                        <input type="text" class="form-control" placeholder="Yotoco" aria-label="Username"
-                            aria-describedby="basic-addon1">
-                    </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">Mail</span>
-                        <input type="text" class="form-control" placeholder="yotocolomodeperro@gmail.com"
-                            aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">Numero de teléfono</span>
-                        <input type="text" class="form-control" placeholder="+22 123 345 567" aria-label="Username"
-                            aria-describedby="basic-addon1">
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-text">Carta de presentación</span>
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    <div class="formularios-lista">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Nombre</span>
+                            <input type="text" class="form-control" placeholder="Lomo" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Apellido</span>
+                            <input type="text" class="form-control" placeholder="Yotoco" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Mail</span>
+                            <input type="text" class="form-control" placeholder="yotocolomodeperro@gmail.com"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Numero de teléfono</span>
+                            <input type="text" class="form-control" placeholder="+22 123 345 567" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">Carta de presentación</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+
                     </div>
                     <hr class="linea-horizontal-formularios">
                     <div class="contenedor-botones-formulario">
                         <div class="botones-formulario">
-                            <button type="button" class="btn boton-subir-cv px-4 ">Subir CV</button>
+                            <button type="button" class="btn boton-subir px-4 ">Subir CV</button>
                         </div>
                         <div class="botones-formulario">
                             <button type="button" class="btn boton-enviar px-4">Enviar</button>
                         </div>
                     </div>
-                    <!-- <form action="" method="get">
-                        <label>Nombre:
-                            <input type="text" name="nombre" placeholder="Nombre" required>
-                        </label>
-                        <label>Apellido:
-                            <input type="text" name="apellido" placeholder="Apellido" required>
-                        </label>
-                        <label>Ciudad:
-                            <input type="text" name="ciudad" placeholder="Ciudad" required>
-                        </label>
-                        <label>Numero de telefono:
-                            <input type="number" name="numero de telefono" placeholder="Telefono" required>
-                        </label>
-                        <label>Email:
-                            <input type="email" name="Mail" placeholder="Correo" required>
-                        </label>
-                        <br>
-                        <br>
-                        <textarea name="carta de presentacion" id="" cols="30" rows="10"
-                            placeholder="Carta de presentación"></textarea>
-                        <br>
-                        <br>
-                        <input type="button" value="Cargar CV">
-                        <br><br>
-                        <input type="submit" value="Enviar">
-            
-                    </form> -->
                 </div>
             </div>
         </div>

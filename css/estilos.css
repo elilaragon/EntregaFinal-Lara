@@ -414,8 +414,8 @@
     margin-left: 140px;
 } */
 
-/* 
-footer {
+
+/* footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -436,7 +436,7 @@ footer {
     margin-top: -30px;
     padding-bottom: 40px;
     margin-right: 40px;
-} */
+}
 
 
 .texto-del-footer {
@@ -444,7 +444,7 @@ footer {
     font-weight: 400;
     font-size: 12px;
     color: #EAEBEB;
-}
+} */
 
 /* .tarjeta-receta-dificultad-imagen img {
     width: 120px;
@@ -659,9 +659,9 @@ footer {
 
 
 /* //TRABAJA CON NOSOTROS// */
-
-.banner-buscar-trabajo {
-    /* width: 80%; */
+/* 
+.banner-empleo-buscar {
+  
     height: 200px;
     background-color: #D9D9D9;
     position: absolute;
@@ -669,7 +669,7 @@ footer {
     padding: 0 80px;
 }
 
-.titulo-banner-trabajo h2 {
+.banner-empleo-titulo h2 {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
@@ -677,7 +677,7 @@ footer {
     font-size: 55px;
 }
 
-.banner-busca-empleo {
+.banner-empleo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -691,13 +691,13 @@ footer {
 }
 
 @media (min-width: 1200px) {
-    .banner-busca-empleo {
+    .banner-empleo {
         height: 300px;
         width: 100%;
     }
-}
+} */
 
-.boton-buscar {
+/* .boton-buscar {
     width: 100%;
     background-color: #F06B5F;
     color: #EAEBEB;
@@ -706,13 +706,13 @@ footer {
 
 .boton-buscar:hover {
     background-color: #3F525A;
-}
+} */
 
-.selectores-de-trabajo {
+/* .banner-empleo-selector {
     display: flex;
-}
+} */
 
-.contenedor-formularios {
+/* .contenedor-formularios {
     margin-top: 200px;
     display: flex;
     align-items: center;
@@ -722,19 +722,19 @@ footer {
     border: #2A3040 solid 1px;
     padding: 20px;
     border-radius: 12px;
-}
+} */
 
-.foto-cv img {
+/* .contenedor-formularios-foto img {
     width: 200px;
     height: auto;
 }
 
-.foto-cv {
+.contenedor-formularios-foto {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-}
+} */
 
 .btn-boton-subir-foto {
     margin: 10px;
@@ -749,10 +749,10 @@ footer {
     color: #EAEBEB;
 }
 
-.linea-horizontal-formularios {
+/* .linea-horizontal-formularios {
     margin-top: 30px;
     background-color: #2A3040;
-}
+} */
 
 .boton-subir-cv {
     background-color: #2A3040;
@@ -764,7 +764,7 @@ footer {
     color: #EAEBEB;
 }
 
-.botones-formulario {
+/* .botones-formulario {
     display: flex;
     justify-content: center;
 }
@@ -773,9 +773,9 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-inline: 100px;
-}
+} */
 
-.nos-encanta {
+/* .nos-encanta {
     display: flex;
     justify-content: center;
     margin-top: 100px;
@@ -790,11 +790,11 @@ footer {
 
 .texto-trabajo {
     padding-top: 20px;
-}
+} */
 
 /* // PRODUCTO// */
 
-.estrellas img {
+/* .estrellas img {
     margin-left: -5px;
 }
 
@@ -807,7 +807,7 @@ footer {
 
 .texto-tarjeta-iva {
     font-size: 10px;
-}
+} */
 
 .btn-link {
     margin-left: -12px;
