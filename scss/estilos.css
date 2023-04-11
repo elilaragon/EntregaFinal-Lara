@@ -194,7 +194,7 @@
   background-position: left center;
   height: 200px;
   width: auto;
-  background-image: url(../../multimedia/img/banner-historia.png);
+  background-image: url(../multimedia/img/banner-historia.png);
 }
 @media (min-width: 550px) {
   .banner-historia {
@@ -296,14 +296,13 @@
 }
 
 .tarjeta-producto {
-  padding: 12px;
   max-height: -moz-fit-content;
   max-height: fit-content;
   transition: 0.4s;
-  max-width: 69%;
+  max-width: 89%;
   display: block;
   border-bottom: #3F525A 0.75px solid;
-  padding: 30px;
+  padding: 30px 0;
 }
 .tarjeta-producto-imagen img {
   height: auto;
@@ -763,8 +762,6 @@ footer {
 }
 @media (min-width: 550px) {
   .historia-texto {
-    padding-left: 200px;
-    padding-right: 200px;
     padding-top: 10px;
     font-size: 22px;
     text-align: center;
@@ -814,8 +811,8 @@ footer {
 }
 @media (min-width: 550px) {
   .contenedor-historia-foto img {
-    width: auto;
-    height: 600px;
+    width: 100%;
+    height: auto;
     margin: 30px;
   }
 }/*# sourceMappingURL=estilos.css.map */

@@ -78,33 +78,16 @@
 }
 
 
-// &-receta {
-//     margin-top: 5px;
-//     margin-bottom: 50px;
-//     display: block;
-
-//     @media (min-width: 550px) {
-//         padding-left: 10px;
-//         padding-right: 10px;
-//         display: flex;
-//         align-items: center;
-
-//     }
-
-
-// }
-
 
 
 .tarjeta {
     &-producto {
-        padding: 12px;
         max-height: fit-content;
         transition: 0.4s;
-        max-width: 69%;
+        max-width: 89%;
         display: block;
         border-bottom: #3F525A 0.75px solid;
-        padding: 30px;
+        padding: 30px 0;
 
         &-imagen {
             img {

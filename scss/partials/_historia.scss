@@ -29,8 +29,7 @@
         text-align: center;
 
         @media (min-width: 550px) {
-            padding-left: 200px;
-            padding-right: 200px;
+            
             padding-top: 10px;
             font-size: 22px;
             text-align: center;
@@ -86,8 +85,8 @@
                 padding-bottom: 10px;
 
                 @media (min-width: 550px) {
-                    width: auto;
-                    height: 600px;
+                    width: 100%;
+                    height: auto;
                     margin: 30px;
                 }
             }
