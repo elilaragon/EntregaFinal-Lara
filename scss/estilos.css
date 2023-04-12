@@ -93,7 +93,6 @@
     font-size: 18px;
     position: relative;
     display: block;
-    text-transform: uppercase;
     margin: 20px 0;
     padding: 10px 20px;
     text-decoration: none;
@@ -427,7 +426,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.12);
 }
 .tarjeta-producto .botonchip-compra-icono:hover {
-  background: #617077;
+  background: #2A3040;
 }
 
 .contenedor-tarjeta-receta {
@@ -630,6 +629,7 @@ footer {
 }
 @media (min-width: 550px) {
   .contenedor-formularios-foto img {
+    margin-top: -100px;
     padding-top: 0;
     width: 300px;
     height: auto;
@@ -760,7 +760,7 @@ footer {
   }
 }
 .contenedor-botones-formulario .botones-formulario .boton-subir {
-  background-color: #2A3040;
+  background-color: #F06B5F;
   color: #EAEBEB;
 }
 .contenedor-botones-formulario .botones-formulario .boton-enviar {
