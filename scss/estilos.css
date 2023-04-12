@@ -21,7 +21,6 @@
     align-items: center;
     justify-content: space-between;
     padding-left: 100px;
-    padding-top: 15px;
     padding-bottom: 0px;
     padding-right: 100px;
   }
@@ -39,7 +38,6 @@
 .navegador-logo img {
   width: 200px;
   height: auto;
-  padding-bottom: 20px;
 }
 .navegador-menu {
   display: flex;
@@ -218,14 +216,14 @@
   align-items: center;
   width: 100%;
   background-color: #F06B5F;
-  padding-top: 12px;
+  padding-top: 9px;
 }
 @media (min-width: 550px) {
   .banner-rebajas {
     height: 40px;
   }
 }
-.banner-rebajas p {
+.banner-rebajas h6 {
   text-transform: uppercase;
   font-weight: 400;
   background-color: transparent;
@@ -697,15 +695,13 @@ footer {
 
 .contenedor-botones-formulario {
   display: flex;
-  justify-content: space-between;
-  padding-inline: 100px;
+  justify-content: space-evenly;
 }
 .contenedor-botones-formulario .botones-formulario {
   display: block;
   justify-content: center;
   width: auto;
   height: 50px;
-  margin-left: 20px;
   margin-bottom: 50px;
 }
 @media (min-width: 550px) {
@@ -756,21 +752,19 @@ footer {
 }
 .historia-texto {
   font-size: 15px;
-  padding-left: 70px;
-  padding-right: 70px;
   text-align: center;
 }
 @media (min-width: 550px) {
   .historia-texto {
     padding-top: 10px;
-    font-size: 22px;
+    font-size: 16px;
     text-align: center;
   }
 }
 .historia-texto h5 {
-  font-size: 16px;
+  font-size: 18px;
   padding-top: 30px;
-  color: #F06B5F;
+  color: #3F525A;
   font-weight: 600;
 }
 @media (min-width: 550px) {
@@ -797,7 +791,8 @@ footer {
   .contenedor-historia-foto {
     display: flex;
     justify-content: space-between;
-    padding: 100px;
+    padding: 0 40px;
+    padding-bottom: 40px;
   }
 }
 .contenedor-historia-foto img {
@@ -813,6 +808,6 @@ footer {
   .contenedor-historia-foto img {
     width: 100%;
     height: auto;
-    margin: 30px;
+    padding: 0 10px;
   }
 }/*# sourceMappingURL=estilos.css.map */

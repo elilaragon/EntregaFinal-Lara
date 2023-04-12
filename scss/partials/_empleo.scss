@@ -261,8 +261,7 @@
     &-botones {
         &-formulario {
             display: flex;
-            justify-content: space-between;
-            padding-inline: 100px;
+            justify-content: space-evenly;
 
             .botones {
                 &-formulario {
@@ -270,7 +269,6 @@
                     justify-content: center;
                     width: auto;
                     height: 50px;
-                    margin-left: 20px;
                     margin-bottom: 50px;
     
                     @media (min-width: 550px){

@@ -24,22 +24,20 @@
 
     &-texto {
         font-size: 15px;
-        padding-left: 70px;
-        padding-right: 70px;
         text-align: center;
 
         @media (min-width: 550px) {
             
             padding-top: 10px;
-            font-size: 22px;
+            font-size: 16px;
             text-align: center;
 
         }
 
         h5 {
-            font-size: 16px;
+            font-size: 18px;
             padding-top: 30px;
-            color: $colornaranja;
+            color: $colorturquesaoscuro;
             font-weight: 600;
 
             @media (min-width: 550px) {
@@ -70,7 +68,8 @@
             @media (min-width: 550px) {
                 display: flex;
                 justify-content: space-between;
-                padding: 100px;
+                padding: 0 40px;
+                padding-bottom: 40px;
 
             }
 
@@ -87,7 +86,7 @@
                 @media (min-width: 550px) {
                     width: 100%;
                     height: auto;
-                    margin: 30px;
+                    padding: 0 10px;
                 }
             }
         }
