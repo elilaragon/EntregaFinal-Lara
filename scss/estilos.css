@@ -51,6 +51,10 @@
   .navegador-ul {
     justify-content: center;
     display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 .navegador-ul-lista {
@@ -75,22 +79,70 @@
     top: 0;
   }
 }
-@media (min-width: 550px) {
-  .navegador li {
+@media (min-width: 550px) and (min-width: 550px) {
+  .navegador-ul-lista li {
     padding: 10px;
     list-style-type: none;
     text-decoration: none;
   }
 }
-@media (min-width: 550px) {
-  .navegador a {
+@media (min-width: 550px) and (min-width: 550px) {
+  .navegador-ul-lista li a {
     text-decoration: none;
     color: #EAEBEB;
     font-size: 18px;
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #EAEBEB;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s;
+    z-index: 1;
+  }
+  .navegador-ul-lista li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #F06B5F;
+    border-bottom: 1px solid #F06B5F;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .navegador-ul-lista li a:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+  }
+  .navegador-ul-lista li a:hover {
+    color: #fff;
+  }
+  .navegador-ul-lista li a:hover:before {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  .navegador-ul-lista li a:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
   }
 }
 @media (min-width: 550px) {
-  .navegador-contenedor {
+  .navegador-ul-contenedor {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,7 +151,6 @@
 .navegador-boton-icono {
   border-radius: 30px 30px 30px 30px;
   border-color: transparent;
-  background-color: #EAEBEB;
   width: 32px;
   height: 32px;
   margin-right: 8px;
@@ -473,7 +524,6 @@ footer {
   padding-bottom: 40px;
   margin-right: 40px;
 }
-
 .banner-empleo {
   display: flex;
   justify-content: center;
