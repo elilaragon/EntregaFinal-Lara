@@ -205,10 +205,25 @@
             .tarjeta {
                 &-receta {
                     &-icono {
+                        display: block;
+
+                        @media (min-width: 550px) {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
                         &-play {
                             position: absolute;
-                            margin-top: 100px;
-                            margin-left: 150px;
+                            margin-left: 120px;
+                            margin-top: 80px;
+
+                            @media (min-width: 550px) {
+                                position: absolute;
+                                margin-top: 100px;
+                                margin-left: 140px;
+
+                            }
 
                         }
                     }
@@ -290,11 +305,3 @@
     }
 }
 
-
-
-// &-receta {
-//     @media (min-width: 550px) {
-//         display: flex;
-//         justify-content: space-between;
-//     }
-// }

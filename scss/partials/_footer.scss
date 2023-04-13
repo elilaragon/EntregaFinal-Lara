@@ -1,22 +1,37 @@
 footer {
-    width: 100%;
-    min-height: auto;
     background-color: #2A3040;
-    position: absolute;
-    margin-top: 80px;
-    display: flex;
+    width: 100%;
+    height: auto;
     padding: 30px;
-    padding-left: 100px;
-    padding-left: 100px;
+    padding-left: 30px;
+    padding-left: 30px;
+
+
+    @media (min-width: 550px) {
+        // position: relative;
+        display: flex;
+        padding: 30px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 
     h6 {
         color: $colorblanco;
+        font-size: 15px;
     }
 
     .columna1 {
-        margin-right: 200px;
+
+        @media (min-width: 550px) {
+            margin-right: 200px;
+        }
 
         &-iconos {
+            @media (min-width: 550px) {
+                display: block;
+                justify-content: end;
+            }
+
             &-redes {
                 display: block;
                 margin-top: 20px;
@@ -34,9 +49,14 @@ footer {
     }
 
     .columna2 {
-        padding-top: 90px;
-        margin-right: 100px;
-        align-items: end;
+        padding-top: 20px;
+
+        @media (min-width: 550px) {
+            padding-top: 90px;
+            margin-right: 100px;
+            align-items: end;
+
+        }
 
         &-iconos {
             &-pago {
