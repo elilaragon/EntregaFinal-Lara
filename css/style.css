@@ -428,7 +428,7 @@ body {
 }
 
 
-footer {
+/* footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -436,7 +436,7 @@ footer {
     height: 40px;
     background-color: #2A3040;
     position: absolute;
-}
+} */
 
 .chat-ayuda {
     display: flex;
@@ -452,12 +452,12 @@ footer {
 }
 
 
-.texto-del-footer {
+/* .texto-del-footer {
     background-color: transparent;
     font-weight: 400;
     font-size: 12px;
     color: #EAEBEB;
-}
+} */
 
 .imagen-nivel-de-receta img {
     width: 120px;

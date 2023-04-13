@@ -501,14 +501,45 @@
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 40px;
+  min-height: auto;
   background-color: #2A3040;
   position: absolute;
-  margin-top: 40px;
+  margin-top: 80px;
+  display: flex;
+  padding: 30px;
+  padding-left: 100px;
+  padding-left: 100px;
+}
+footer h6 {
+  color: #EAEBEB;
+}
+footer .columna1 {
+  margin-right: 200px;
+}
+footer .columna1-iconos-redes {
+  display: block;
+  margin-top: 20px;
+}
+footer .columna1-iconos-redes img {
+  margin-bottom: 20px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+footer .columna2 {
+  padding-top: 90px;
+  margin-left: 100px;
+  align-items: end;
+}
+footer .columna2-iconos-pago {
+  display: flex;
+}
+footer .columna2-iconos-pago img {
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 32px;
+  height: auto;
 }
 
 .chat-ayuda {
@@ -523,6 +554,7 @@ footer {
   padding-bottom: 40px;
   margin-right: 40px;
 }
+
 .banner-empleo {
   display: flex;
   justify-content: center;
