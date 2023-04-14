@@ -50,8 +50,9 @@ footer {
 
     .columna2 {
         padding-top: 20px;
-
         @media (min-width: 550px) {
+            display: flex;
+            justify-content: end;
             padding-top: 90px;
             margin-right: 100px;
             align-items: end;
