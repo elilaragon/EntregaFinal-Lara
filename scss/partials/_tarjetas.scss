@@ -10,7 +10,7 @@
                 padding-top: 30px;
                 margin-left: 15px;
 
-                @media (min-width: 550px) {
+               @include destock {
                     font-weight: 400;
                     padding-top: 40px;
                 }
@@ -25,7 +25,7 @@
             &-producto {
                 display: block;
 
-                @media (min-width: 550px) {
+               @include destock {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
@@ -37,7 +37,7 @@
 
                 &-imagen {
                     img {
-                        @media (min-width: 550px) {
+                       @include destock {
                             width: 100%;
                             height: 200px;
                         }
@@ -117,7 +117,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
 
-            @media (min-width: 550px) {
+           @include destock {
                 font-size: 14px;
                 font-weight: 500;
                 margin-top: -13px;
@@ -162,7 +162,7 @@
             justify-content: flex-end;
             margin-top: 10px;
 
-            @media (min-width: 550px) {
+           @include destock {
                 padding-top: 10px;
             }
 
@@ -196,7 +196,7 @@
             width: 100%;
             display: block;
 
-            @media (min-width: 550px) {
+           @include destock {
                 padding-left: 10px;
                 padding-right: 10px;
                 display: flex;
@@ -207,7 +207,7 @@
                     &-icono {
                         display: block;
 
-                        @media (min-width: 550px) {
+                       @include destock {
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -218,7 +218,7 @@
                             margin-left: 120px;
                             margin-top: 80px;
 
-                            @media (min-width: 550px) {
+                           @include destock {
                                 position: absolute;
                                 margin-top: 100px;
                                 margin-left: 140px;
@@ -296,7 +296,7 @@
                 padding-top: 30px;
                 margin-left: 15px;
 
-                @media (min-width: 550px) {
+               @include destock {
                     font-weight: 400;
                     padding-top: 40px;
                 }

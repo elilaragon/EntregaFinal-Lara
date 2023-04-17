@@ -7,7 +7,7 @@ footer {
     padding-left: 30px;
 
 
-    @media (min-width: 550px) {
+   @include destock {
         // position: relative;
         display: flex;
         padding: 30px;
@@ -22,12 +22,12 @@ footer {
 
     .columna1 {
 
-        @media (min-width: 550px) {
+       @include destock {
             margin-right: 200px;
         }
 
         &-iconos {
-            @media (min-width: 550px) {
+           @include destock {
                 display: block;
                 justify-content: end;
             }
@@ -50,7 +50,7 @@ footer {
 
     .columna2 {
         padding-top: 20px;
-        @media (min-width: 550px) {
+       @include destock {
             display: flex;
             justify-content: end;
             padding-top: 90px;

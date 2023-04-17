@@ -5,7 +5,7 @@
     padding-right: 15px;
     padding-bottom: 20px;
 
-    @media (min-width:550px) {
+    @include destock {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -18,7 +18,7 @@
         display: flex;
         justify-content: center;
 
-        @media (min-width:550px) {
+        @include destock {
             display: flex;
             justify-content: flex-start;
         }
@@ -40,7 +40,7 @@
     }
 
     &-ul {
-        @media (min-width:550px) {
+        @include destock {
             justify-content: center;
             display: flex;
             position: absolute;
@@ -53,7 +53,7 @@
             position: relative;
             top: 0;
 
-            @media (min-width:550px) {
+            @include destock {
                 font-weight: 600;
                 list-style-type: none;
                 text-decoration: none;
@@ -70,14 +70,14 @@
                 top: 0;
 
                 li {
-                    @media (min-width:550px) {
+                    @include destock {
                         padding: 10px;
                         list-style-type: none;
                         text-decoration: none;
                     }
 
                     a {
-                        @media (min-width:550px) {
+                        @include destock {
                             text-decoration: none;
                             color: #EAEBEB;
                             font-size: 18px;
@@ -144,7 +144,7 @@
 
 
         &-contenedor {
-            @media (min-width:550px) {
+            @include destock {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -186,7 +186,7 @@
             flex-direction: row;
             height: auto;
 
-            @media (min-width:550px) {
+            @include destock {
                 display: flex;
                 justify-content: flex-end;
                 margin-bottom: 0;
