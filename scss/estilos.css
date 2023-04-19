@@ -170,6 +170,7 @@
   justify-content: end;
   flex-direction: row;
   height: auto;
+  margin-right: 20px;
 }
 @media (min-width: 550px) {
   .navegador-icono-contenedor {
@@ -337,7 +338,7 @@
   border-radius: 25px;
   background-color: #3F525A;
   font-weight: 600;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(0, 0, 0, 0.1);
 }
 .botonchip-compra-icono:hover {
   background: #617077;
@@ -423,7 +424,7 @@
   border-radius: 25px;
   background-color: #3F525A;
   font-weight: 600;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(0, 0, 0, 0.1);
 }
 .tarjeta-producto .botonchip-compra-icono:hover {
   background: #2A3040;
@@ -471,7 +472,7 @@
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 10;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(0, 0, 0, 0.1);
 }
 .contenedor-tarjeta-receta .tarjeta-receta-titulo {
   padding-top: 10px;
@@ -563,9 +564,16 @@ footer .columna2 {
 }
 @media (min-width: 550px) {
   footer .columna2 {
-    padding-top: 90px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
     margin-right: 100px;
     align-items: end;
+  }
+}
+@media (min-width: 550px) {
+  footer .columna2 h6 {
+    padding-right: 10px;
   }
 }
 footer .columna2-iconos-pago {
@@ -711,7 +719,7 @@ footer .columna2-iconos-pago img {
   background-color: #2A3040;
   border-radius: 40px;
   color: #EAEBEB;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(0, 0, 0, 0.1);
   width: 200px;
   margin-left: 80px;
   margin-top: -150px;
@@ -722,7 +730,7 @@ footer .columna2-iconos-pago img {
     background-color: #2A3040;
     border-radius: 40px;
     color: #EAEBEB;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(0, 0, 0, 0.1);
     width: 200px;
     margin-left: 100px;
     margin-top: -60px;
@@ -930,4 +938,118 @@ footer .columna2-iconos-pago img {
     height: auto;
     padding: 0 10px;
   }
+}
+
+.producto {
+  display: block;
+  flex-direction: column;
+}
+@media (min-width: 550px) {
+  .producto {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    max-height: 500px;
+    margin-bottom: 50px;
+  }
+}
+.producto-carrusel {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media (min-width: 550px) {
+  .producto-carrusel {
+    margin: 0 40px;
+  }
+}
+.producto-img-carrusel {
+  border-radius: 10px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  display: block;
+  max-width: 100%;
+  padding-right: 10px;
+}
+@media (min-width: 550px) {
+  .producto-img-carrusel {
+    display: flex;
+    border-radius: 10px;
+    width: auto;
+    height: 500px;
+  }
+}
+.producto-info {
+  border: solid #3F525A;
+  border-width: 0.1px;
+  border-radius: 10px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 14px 30px 0;
+}
+@media (min-width: 550px) {
+  .producto-info {
+    border: solid #3F525A;
+    border-width: 0.1px;
+    border-radius: 10px;
+    margin: 0 auto auto 0;
+  }
+}
+.producto-info h2 {
+  margin-top: 20px;
+  text-align: center;
+  color: #2A3040;
+  font-weight: 600;
+}
+.producto-info p {
+  text-align: center;
+  font-size: 12px;
+}
+@media (min-width: 550px) {
+  .producto-info p {
+    font-size: 14px;
+  }
+}
+.producto-info .form-select {
+  font-size: 12px;
+}
+.producto-info-cantidad {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin: 30px auto 0 auto;
+}
+.producto-info-cantidad .input-number {
+  display: flex;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+.producto-info-cantidad-minus {
+  display: flex;
+  align-items: center;
+  padding: 6px 14px 6px 14px;
+}
+.producto-info-cantidad .btn-number {
+  font-size: 12px;
+  font-weight: 600;
+}
+.producto-info-botonchip {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.producto-info-botonchip-comprar {
+  margin-top: -10px;
+  padding: 0 15px;
+  height: 30px;
+  color: #EAEBEB;
+  font-size: 12px;
+  border-color: transparent;
+  border-radius: 25px;
+  background-color: #F06B5F;
+  font-weight: 600;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+.producto-info .liea-horizontal {
+  margin: 30px;
 }/*# sourceMappingURL=estilos.css.map */

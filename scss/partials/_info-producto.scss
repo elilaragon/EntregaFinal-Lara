@@ -1,0 +1,124 @@
+.producto {
+    display: block;
+    flex-direction: column;
+
+    @include destock {
+        display: flex;
+        flex-direction: row;
+        margin-top: 80px;
+        max-height: 500px;
+        margin-bottom: 50px;
+    }
+
+    &-carrusel {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        @include destock {
+            margin: 0 40px;
+        }
+
+    }
+
+    &-img-carrusel {
+        border-radius: 10px;
+        max-height: fit-content;
+        display: block;
+        max-width: 100%;
+      padding-right: 10px;
+
+        @include destock{
+            display: flex;
+            
+            border-radius: 10px;
+            width: auto;
+            height: 500px;
+        }
+    }
+
+    &-info {
+        border: solid $colorturquesaoscuro;
+        border-width: 0.1px;
+        border-radius: 10px;
+        max-width: fit-content;
+        margin: 0 14px 30px 0;
+
+        @include destock {
+            border: solid $colorturquesaoscuro;
+            border-width: 0.1px;
+            border-radius: 10px;
+            margin: 0 auto auto 0;
+        }
+
+        h2 {
+            margin-top: 20px;
+            text-align: center;
+            color: $colorazul;
+            font-weight: 600;
+        }
+
+        p {
+            text-align: center;
+            font-size: 12px;
+
+            @include destock {
+                font-size: 14px;
+            }
+
+        }
+
+        .form-select {
+            font-size: 12px;
+        }
+
+        &-cantidad {
+            display: flex;
+            justify-content: center;
+            width: 30%;
+            margin: 30px auto 0 auto;
+
+            .input-number {
+                display: flex;
+                text-align: center;
+                font-size: 12px;
+                font-weight: 700;
+            }
+
+            &-minus {
+                display: flex;
+                align-items: center;
+                padding: 6px 14px 6px 14px;
+            }
+
+            .btn-number{
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+
+        &-botonchip {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+
+            &-comprar {
+                margin-top: -10px;
+                padding: 0 15px;
+                height: 30px;
+                color: #EAEBEB;
+                font-size: 12px;
+                border-color: transparent;
+                border-radius: 25px;
+                background-color: $colornaranja;
+                font-weight: 600;
+                box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(0, 0, 0, 0.10);
+
+            }
+        }
+
+        .liea-horizontal {
+            margin: 30px;
+        }
+    }
+
+}

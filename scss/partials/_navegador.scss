@@ -185,6 +185,7 @@
             justify-content: end;
             flex-direction: row;
             height: auto;
+            margin-right: 20px;
 
             @include destock {
                 display: flex;

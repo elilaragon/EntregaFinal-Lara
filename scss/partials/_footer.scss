@@ -53,22 +53,24 @@ footer {
        @include destock {
             display: flex;
             justify-content: end;
-            padding-top: 90px;
+            align-items: center;
             margin-right: 100px;
             align-items: end;
-
+        }
+        h6{
+            @include destock{
+                padding-right: 10px;
+            }
         }
 
         &-iconos {
             &-pago {
                 display: flex;
-
                 img {
                     border-radius: 4px;
                     margin-right: 10px;
                     width: 32px;
                     height: auto;
-
                 }
 
             }
