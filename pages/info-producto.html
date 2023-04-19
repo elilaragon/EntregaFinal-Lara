@@ -47,7 +47,6 @@
                     </ul>
                 </div>
             </nav>
-
             <div class="navegador-icono col-12 col-md-3">
                 <div class="navegador-icono-contenedor">
                     <button class="navegador-boton-icono">
@@ -68,17 +67,57 @@
     </div>
 
     <main>
-        <div class="contenedor-producto container px-0 py-5">
-            <div class="contenedor-producto-tarjeta col-12 col-md-6">
-                <div class="imagen-producto">
-                    <img src="../multimedia/img/Bag_cafe_arabica.png" alt="">
+        <div class="col-12 col-md-6 container">
+            <div class="producto d-flex">
+                <div class="producto-carrusel">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="producto-carrusel-imagen container carousel-inner ">
+                            <div class="producto-carrusel-imagen-pro carousel-item active">
+                                <img src="../multimedia/img/Bag_cafe_arabica_carrusel.png" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../multimedia/img/cafe-granos-03-carrusel.png" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
-                <div class="informacion-producto">
-
-
+                <div class="info border p-5 ">
+                    <h2>
+                        Cafe arabica
+                    </h2>
+                    <p>
+                        La planta de café arábica es uno de los dos
+                        principalescafetos que existen actualmente. Entre 7 y 8 de cada 10 granos de café que se
+                        producen en el mundo pertenecen a este tipo, así que es el tipo de café que más probabilidades
+                        tienes de llevarte a los labios siempre que te tomes una taza.
+                    </p>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Tipo de cafe</option>
+                        <option value="1">Grano</option>
+                        <option value="2">Molido</option>
+                    </select>
                 </div>
 
             </div>
+        </div>
 
         </div>
 

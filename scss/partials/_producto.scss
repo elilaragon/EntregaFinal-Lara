@@ -1,9 +1,5 @@
-.contenedor-producto {
-    &-tarjeta {
-        .imagen-producto {
-            width: 50%;
-            height: auto;
-            border-radius: 30px;
-        }
-    }
+.info{
+display: flex;
+justify-content: center;
+
 }
