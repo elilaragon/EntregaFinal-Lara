@@ -953,29 +953,18 @@ footer .columna2-iconos-pago img {
     margin-bottom: 50px;
   }
 }
-.producto-carrusel {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-@media (min-width: 550px) {
-  .producto-carrusel {
-    margin: 0 40px;
-  }
-}
 .producto-img-carrusel {
   border-radius: 10px;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
   display: block;
   max-width: 100%;
   padding-right: 10px;
 }
 @media (min-width: 550px) {
   .producto-img-carrusel {
-    display: flex;
     border-radius: 10px;
     width: auto;
     height: 500px;
+    padding-right: 0;
   }
 }
 .producto-info {
@@ -995,6 +984,7 @@ footer .columna2-iconos-pago img {
   }
 }
 .producto-info h2 {
+  padding-top: 26px;
   margin-top: 20px;
   text-align: center;
   color: #2A3040;

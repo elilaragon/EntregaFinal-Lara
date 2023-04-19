@@ -11,28 +11,27 @@
     }
 
     &-carrusel {
-        margin-top: 30px;
-        margin-bottom: 30px;
+        // margin-top: 30px;
+        // margin-bottom: 30px;
 
         @include destock {
-            margin: 0 40px;
+            // margin: 0 40px;
         }
 
     }
 
     &-img-carrusel {
         border-radius: 10px;
-        max-height: fit-content;
+        // max-height: fit-content;
         display: block;
         max-width: 100%;
-      padding-right: 10px;
+        padding-right: 10px;
 
-        @include destock{
-            display: flex;
-            
+        @include destock {
             border-radius: 10px;
             width: auto;
             height: 500px;
+            padding-right: 0;
         }
     }
 
@@ -51,6 +50,7 @@
         }
 
         h2 {
+            padding-top: 26px;
             margin-top: 20px;
             text-align: center;
             color: $colorazul;
@@ -90,7 +90,7 @@
                 padding: 6px 14px 6px 14px;
             }
 
-            .btn-number{
+            .btn-number {
                 font-size: 12px;
                 font-weight: 600;
             }
