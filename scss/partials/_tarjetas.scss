@@ -10,7 +10,7 @@
                 padding-top: 30px;
                 margin-left: 15px;
 
-               @include destock {
+                @include destock {
                     font-weight: 400;
                     padding-top: 40px;
                 }
@@ -25,7 +25,7 @@
             &-producto {
                 display: block;
 
-               @include destock {
+                @include destock {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
@@ -37,7 +37,7 @@
 
                 &-imagen {
                     img {
-                       @include destock {
+                        @include destock {
                             width: 100%;
                             height: 200px;
                         }
@@ -87,7 +87,12 @@
         max-width: 89%;
         display: block;
         border-bottom: #3F525A 0.75px solid;
-        padding: 30px 0;
+        padding-top: 30px;
+
+        @include destock {
+            padding: 30px 0;
+
+        }
 
         &-imagen {
             img {
@@ -95,6 +100,7 @@
                 max-width: 100%;
                 object-fit: cover;
                 border-radius: 10px;
+                margin-bottom: 8px;
             }
         }
 
@@ -104,7 +110,7 @@
             font-size: 20px;
             font-weight: 600;
             line-height: 20px;
-            padding-bottom: 16px;
+            padding-bottom: 8px;
         }
 
         &-texto {
@@ -117,10 +123,10 @@
             overflow: hidden;
             text-overflow: ellipsis;
 
-           @include destock {
+            @include destock {
                 font-size: 14px;
                 font-weight: 500;
-                margin-top: -13px;
+                margin-top: 2px;
             }
 
             &-origen {
@@ -143,7 +149,7 @@
         }
 
         .estrellas {
-            // margin-left: -5px;
+            margin-left: -5px;
         }
 
         .texto {
@@ -152,7 +158,18 @@
                     color: #F06B5F;
                     font-weight: 700;
                     margin-top: -1px;
-                    font-size: 20px;
+                    font-size: 18px;
+
+                    @include destock {
+                        color: #F06B5F;
+                        font-weight: 700;
+                        margin-top: -1px;
+                        font-size: 20px;
+                    }
+                }
+
+                &-iva {
+                    font-size: 12px;
                 }
             }
         }
@@ -161,9 +178,11 @@
             display: flex;
             justify-content: flex-end;
             margin-top: 10px;
+            margin-bottom: 20px;
 
-           @include destock {
+            @include destock {
                 padding-top: 10px;
+                margin-bottom: 0;
             }
 
             &-icono {
@@ -196,7 +215,7 @@
             width: 100%;
             display: block;
 
-           @include destock {
+            @include destock {
                 padding-left: 10px;
                 padding-right: 10px;
                 display: flex;
@@ -207,7 +226,7 @@
                     &-icono {
                         display: block;
 
-                       @include destock {
+                        @include destock {
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -218,7 +237,7 @@
                             margin-left: 120px;
                             margin-top: 80px;
 
-                           @include destock {
+                            @include destock {
                                 position: absolute;
                                 margin-top: 100px;
                                 margin-left: 140px;
@@ -296,7 +315,7 @@
                 padding-top: 30px;
                 margin-left: 15px;
 
-               @include destock {
+                @include destock {
                     font-weight: 400;
                     padding-top: 40px;
                 }
@@ -305,3 +324,8 @@
     }
 }
 
+.titulo-principal-tarjeta-clase{
+font-size: 15px;
+margin-bottom: 0;
+
+}

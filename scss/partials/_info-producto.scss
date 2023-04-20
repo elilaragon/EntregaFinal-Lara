@@ -1,8 +1,7 @@
 .producto {
     display: block;
     flex-direction: column;
-    margin-right: 20px;
-
+    
     @include destock {
         display: flex;
         flex-direction: row;

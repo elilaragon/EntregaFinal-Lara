@@ -91,6 +91,7 @@
         align-items: center;
         width: 100%;
         background-color: #F06B5F;
+        height: 40px;
         padding-top: 9px;
 
        @include destock {
@@ -110,7 +111,7 @@
                 font-weight: 400;
                 background-color: transparent;
                 color: #EAEBEB;
-
+                font-size: 18px;
             }
         }
     }
