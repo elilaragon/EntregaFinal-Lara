@@ -13,7 +13,7 @@
         width: auto;
         background-image: url(../multimedia/img/banner-principal-rebajas.png);
 
-       @include destock {
+       @include desktop {
             height: 300px;
             width: 100%;
             align-items: center;
@@ -31,7 +31,7 @@
             padding-top: 30px;
             margin-bottom: none;
 
-           @include destock {
+           @include desktop {
                 font-size: 120px;
                 font-weight: 400;
             }
@@ -46,7 +46,7 @@
                 margin-bottom: 30px;
                 justify-content: end;
 
-               @include destock {
+               @include desktop {
                     font-size: 150px;
                     color: $colorblanco;
                     margin-top: 50px;
@@ -66,21 +66,8 @@
         width: auto;
         background-image: url(../multimedia/img/banner-historia.png);
         
-
-       @include destock{
-            display: flex;
-            flex-direction: column;
-            padding-right: 35px;
-            justify-content: center;
-            align-items: flex-end;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: left center;
-            position: relative;
+       @include desktop{
             height: 450px;
-            width: auto;
-            background-image: url(../../multimedia/img/banner-historia.png);
-
         }
 
     }
@@ -94,7 +81,7 @@
         height: 40px;
         padding-top: 9px;
 
-       @include destock {
+       @include desktop {
             height: 40px;
         }
 
@@ -106,7 +93,7 @@
             background-color: transparent;
             color: #EAEBEB;
 
-            @include destock{
+            @include desktop{
                 text-transform: uppercase;
                 font-weight: 400;
                 background-color: transparent;

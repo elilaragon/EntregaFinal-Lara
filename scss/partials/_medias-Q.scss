@@ -1,4 +1,4 @@
-@mixin destock {
+@mixin desktop {
     @media (min-width: 550px) {
         @content;
     }

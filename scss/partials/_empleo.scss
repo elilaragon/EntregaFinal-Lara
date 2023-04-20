@@ -9,7 +9,7 @@
     width: auto;
     background-image: url("../multimedia/img/banner-trabajo.png");
 
-   @include destock {
+   @include desktop {
         position: relative;
         height: 300px;
         width: 100%;
@@ -28,7 +28,7 @@
         top: 240px;
         padding: 20px 80px;
 
-       @include destock {
+       @include desktop {
             height: 200px;
             background-color: #D9D9D9;
             position: absolute;
@@ -45,7 +45,7 @@
             line-height: 34px;
 
 
-           @include destock {
+           @include desktop {
                 padding-top: 30px;
                 padding-bottom: 40px;
                 text-align: center;
@@ -58,7 +58,7 @@
 
     &-selector {
 
-       @include destock {
+       @include desktop {
             display: flex;
 
         }
@@ -69,7 +69,7 @@
                 background-color: #F06B5F;
                 color: #EAEBEB;
 
-               @include destock {
+               @include desktop {
                     justify-content: center;
                     display: flex;
                 }
@@ -89,7 +89,7 @@
     flex-direction: column;
     align-items: center;
 
-   @include destock {
+   @include desktop {
         display: flex;
         flex-direction: row;
     }
@@ -99,7 +99,7 @@
         display: block;
         flex-direction: column;
 
-       @include destock {
+       @include desktop {
             display: flex;
             justify-content: center;
         }
@@ -111,7 +111,7 @@
             padding-left: 100px;
             padding-bottom: 100px;
 
-           @include destock {
+           @include desktop {
                 margin-top: -100px;
                 padding-top: 0;
                 width: 300px;
@@ -132,7 +132,7 @@
                     margin-left: 80px;
                     margin-top: -150px;
 
-                   @include destock {
+                   @include desktop {
                         margin: 10px;
                         background-color: #2A3040;
                         border-radius: 40px;
@@ -170,7 +170,7 @@
                     width: 60px;
                     height: auto;
 
-                   @include destock {
+                   @include desktop {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -189,7 +189,7 @@
                         margin-left: -326px;
                         position: relative;
 
-                       @include destock {
+                       @include desktop {
                             display: flex;
                             width: auto;
                             margin: 0;
@@ -217,7 +217,7 @@
 
 .nos-encanta {
 
-   @include destock {
+   @include desktop {
         display: flex;
         justify-content: center;
         margin-top: 100px;
@@ -232,7 +232,7 @@
         margin-right: 30px;
         text-align: center;
 
-       @include destock {
+       @include desktop {
             font-weight: 700;
             font-size: 50px;
             margin-right: 50px;
@@ -247,7 +247,7 @@
         margin-bottom: 20px;
         text-align: center;
 
-       @include destock {
+       @include desktop {
             padding-top: 20px;
             margin-bottom: 20px;
             text-align: start;
@@ -269,7 +269,7 @@
                     height: 50px;
                     margin-bottom: 50px;
     
-                   @include destock{
+                   @include desktop{
                         display: flex;
                     }
 

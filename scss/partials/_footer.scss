@@ -7,9 +7,7 @@ footer {
     padding-left: 30px;
 
 
-   @include destock {
-        // position: relative;
-        display: flex;
+   @include desktop {
         padding: 30px;
         padding-left: 100px;
         padding-right: 100px;
@@ -21,15 +19,10 @@ footer {
     }
 
     .columna1 {
-
-       @include destock {
-            margin-right: 200px;
-        }
-
         &-iconos {
-           @include destock {
+           @include desktop {
                 display: block;
-                justify-content: end;
+                justify-content: start;
             }
 
             &-redes {
@@ -50,16 +43,15 @@ footer {
 
     .columna2 {
         padding-top: 20px;
-       @include destock {
+       @include desktop {
             display: flex;
             justify-content: end;
             align-items: center;
-            margin-right: 100px;
-            align-items: end;
         }
         h6{
-            @include destock{
+            @include desktop{
                 padding-right: 10px;
+                margin: 0;
             }
         }
 
@@ -78,4 +70,13 @@ footer {
         }
 
     }
+}
+
+.input-group{
+&-text{
+    padding: 0 8px;
+}
+.form-control{
+    padding: 0;
+}
 }

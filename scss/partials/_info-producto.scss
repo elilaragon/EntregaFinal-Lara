@@ -2,7 +2,7 @@
     display: block;
     flex-direction: column;
     
-    @include destock {
+    @include desktop {
         display: flex;
         flex-direction: row;
         margin-top: 80px;
@@ -25,7 +25,7 @@
         margin-bottom: 30px;
         width: 95%;
 
-        @include destock {
+        @include desktop {
             border-radius: 10px;
             width: auto;
             height: 450px;
@@ -42,7 +42,7 @@
         margin-bottom: 40px;
         margin: 0;
 
-        @include destock {
+        @include desktop {
             border: solid $colorturquesaoscuro;
             border-width: 0.1px;
             border-radius: 10px;
@@ -59,7 +59,7 @@
             text-align: center;
             font-size: 12px;
 
-            @include destock {
+            @include desktop {
                 font-size: 14px;
                 margin: 30px 0 30px 0;
             }

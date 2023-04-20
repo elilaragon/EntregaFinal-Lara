@@ -11,7 +11,6 @@
 .navegador {
   background-color: #2A3040;
   display: block;
-  padding-right: 15px;
   padding-bottom: 20px;
 }
 @media (min-width: 550px) {
@@ -247,18 +246,7 @@
 }
 @media (min-width: 550px) {
   .banner-historia {
-    display: flex;
-    flex-direction: column;
-    padding-right: 35px;
-    justify-content: center;
-    align-items: flex-end;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left center;
-    position: relative;
     height: 450px;
-    width: auto;
-    background-image: url(../../multimedia/img/banner-historia.png);
   }
 }
 .banner-rebajas {
@@ -567,7 +555,6 @@ footer {
 }
 @media (min-width: 550px) {
   footer {
-    display: flex;
     padding: 30px;
     padding-left: 100px;
     padding-right: 100px;
@@ -578,14 +565,9 @@ footer h6 {
   font-size: 15px;
 }
 @media (min-width: 550px) {
-  footer .columna1 {
-    margin-right: 200px;
-  }
-}
-@media (min-width: 550px) {
   footer .columna1-iconos {
     display: block;
-    justify-content: end;
+    justify-content: start;
   }
 }
 footer .columna1-iconos-redes {
@@ -606,13 +588,12 @@ footer .columna2 {
     display: flex;
     justify-content: end;
     align-items: center;
-    margin-right: 100px;
-    align-items: end;
   }
 }
 @media (min-width: 550px) {
   footer .columna2 h6 {
     padding-right: 10px;
+    margin: 0;
   }
 }
 footer .columna2-iconos-pago {
@@ -623,6 +604,13 @@ footer .columna2-iconos-pago img {
   margin-right: 10px;
   width: 32px;
   height: auto;
+}
+
+.input-group-text {
+  padding: 0 8px;
+}
+.input-group .form-control {
+  padding: 0;
 }
 
 .chat-ayuda {

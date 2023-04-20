@@ -1,10 +1,9 @@
 .navegador {
     background-color: $colorazul;
     display: block;
-    padding-right: 15px;
     padding-bottom: 20px;
 
-    @include destock {
+    @include desktop {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -17,7 +16,7 @@
         display: flex;
         justify-content: center;
 
-        @include destock {
+        @include desktop {
             display: flex;
             justify-content: flex-start;
         }
@@ -40,7 +39,7 @@
     }
 
     &-ul {
-        @include destock {
+        @include desktop {
             justify-content: center;
             display: flex;
             position: absolute;
@@ -53,7 +52,7 @@
             position: relative;
             top: 0;
 
-            @include destock {
+            @include desktop {
                 font-weight: 600;
                 list-style-type: none;
                 text-decoration: none;
@@ -70,14 +69,14 @@
                 top: 0;
 
                 li {
-                    @include destock {
+                    @include desktop {
                         padding: 10px;
                         list-style-type: none;
                         text-decoration: none;
                     }
 
                     a {
-                        @include destock {
+                        @include desktop {
                             text-decoration: none;
                             color: #EAEBEB;
                             font-size: 18px;
@@ -144,7 +143,7 @@
 
 
         &-contenedor {
-            @include destock {
+            @include desktop {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -187,7 +186,7 @@
             height: auto;
             margin-right: 20px;
 
-            @include destock {
+            @include desktop {
                 display: flex;
                 justify-content: flex-end;
                 margin-bottom: 0;
