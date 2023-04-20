@@ -1082,4 +1082,9 @@ footer .columna2-iconos-pago img {
 }
 .producto-info .liea-horizontal {
   margin: 30px;
+}
+
+.footer-info-producto {
+  position: absolute;
+  bottom: 0;
 }/*# sourceMappingURL=estilos.css.map */
