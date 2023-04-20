@@ -100,8 +100,18 @@
         h6 {
             text-transform: uppercase;
             font-weight: 400;
+            font-size: 12px;
+            text-align: center;
             background-color: transparent;
             color: #EAEBEB;
+
+            @include destock{
+                text-transform: uppercase;
+                font-weight: 400;
+                background-color: transparent;
+                color: #EAEBEB;
+
+            }
         }
     }
 }
