@@ -1,7 +1,10 @@
 .navegador {
     background-color: $colorazul;
-    display: block;
-    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 8px;
+    align-items: center;
 
     @include desktop {
         display: flex;
@@ -14,7 +17,7 @@
 
     &-logo {
         display: flex;
-        justify-content: center;
+        justify-content: start;
 
         @include desktop {
             display: flex;
@@ -22,19 +25,23 @@
         }
 
         img {
-            width: 200px;
+            width: 100px;
             height: auto;
+
+            @include desktop {
+                width: 200px;
+                height: auto;
+
+            }
         }
     }
 
     &-menu {
         display: flex;
-        display: inline-block;
-        margin-bottom: -40px;
 
-        img {
+        &:nth-child(1) img {
             width: 35px;
-            margin-left:12px ;
+            margin-left: 12px;
         }
     }
 
@@ -150,8 +157,9 @@
             }
         }
 
-        
+
     }
+
     &-boton {
         &-icono {
             border-radius: 30px 30px 30px 30px;
@@ -169,6 +177,22 @@
                 width: 20px;
             }
         }
+
+        &-busqueda {
+            display: block;
+            width: 1200px;
+            height: 100%;
+            background-color: $colorazul;
+            border-color: #EAEBEB;
+            padding: 5px 0 10px 10px;
+            
+            &-imagen{
+                width: 30%;
+                img{
+                    display: flex;
+                }
+            }
+        }
     }
 
 
@@ -184,13 +208,32 @@
             justify-content: end;
             flex-direction: row;
             height: auto;
-            margin-right: 20px;
 
             @include desktop {
                 display: flex;
                 justify-content: flex-end;
                 margin-bottom: 0;
             }
+        }
+
+        &-movil {
+            display: flex;
+            align-items: end;
+
+            &-imagen {
+                padding-left: 10px;
+                border-color: transparent;
+                background-color: transparent;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+
+                img {
+                    height: 22px;
+                    width: auto;
+                }
+            }
+
         }
     }
 }
