@@ -1067,9 +1067,6 @@ footer .columna2-iconos-pago img {
 .producto-info-pagar-texto {
   font-size: 12px;
 }
-.producto-info-pagar-texto h6 {
-  margin: 0;
-}
 .producto-info h2 {
   text-align: start;
   color: #2A3040;
@@ -1113,7 +1110,7 @@ footer .columna2-iconos-pago img {
 .producto-info-botonchip {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .producto-info-botonchip-comprar {
   margin-top: -10px;

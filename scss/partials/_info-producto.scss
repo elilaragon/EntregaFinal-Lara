@@ -64,6 +64,7 @@
 
             &-texto {
                 font-size: 12px;
+            }
         }
 
         h2 {
@@ -136,7 +137,7 @@
         &-botonchip {
             display: flex;
             justify-content: center;
-            margin-top: 25px;
+            margin-top: 20px;
 
             &-comprar {
                 margin-top: -10px;
@@ -147,15 +148,12 @@
                 border-color: transparent;
                 border-radius: 25px;
                 background-color: $colornaranja;
-                font-weight: 400;
+                font-weight: 600;
                 box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(0, 0, 0, 0.10);
+
             }
-
         }
 
-        .liea-horizontal {
-            // margin: 30px;
-        }
     }
 
 }
