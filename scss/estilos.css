@@ -1042,11 +1042,23 @@ footer .columna2-iconos-pago img {
   }
 }
 .producto-info {
-  margin: 20px;
+  display: inline-table;
+  margin: 0 20px;
+}
+@media (min-width: 550px) {
+  .producto-info {
+    margin: 20px 40px 0 0;
+  }
 }
 .producto-info .texto-precio {
-  font-size: 28px;
+  font-size: 22px;
   color: #F06B5F;
+}
+@media (min-width: 550px) {
+  .producto-info .texto-precio {
+    font-size: 28px;
+    color: #F06B5F;
+  }
 }
 .producto-info .texto-iva {
   font-size: 12px;
@@ -1057,8 +1069,16 @@ footer .columna2-iconos-pago img {
 }
 .producto-info-pagar {
   border-radius: 10px;
+  padding: 20px;
   border: #2A3040 solid 1px;
-  padding: 15px;
+  margin: 20px;
+}
+@media (min-width: 550px) {
+  .producto-info-pagar {
+    border-radius: 10px;
+    border: #2A3040 solid 1px;
+    padding: 20px;
+  }
 }
 .producto-info-pagar-precio {
   font-size: 28px;
@@ -1066,6 +1086,10 @@ footer .columna2-iconos-pago img {
 }
 .producto-info-pagar-texto {
   font-size: 12px;
+}
+.producto-info-pagar-texto-condiciones {
+  font-size: 12px;
+  color: #3F525A;
 }
 .producto-info h2 {
   text-align: start;
@@ -1089,13 +1113,18 @@ footer .columna2-iconos-pago img {
   font-size: 13px;
   font-weight: 600;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 .producto-info-seleccion-imagen img {
+  margin-top: 15px;
   border-radius: 10px;
   max-height: -moz-fit-content;
   max-height: fit-content;
   max-width: 100px;
+}
+.producto-info-seleccion-imagen img:hover {
+  border: 3px solid;
+  color: #F06B5F;
 }
 .producto-info .form-select {
   font-size: 12px;
@@ -1110,7 +1139,7 @@ footer .columna2-iconos-pago img {
 .producto-info-botonchip {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .producto-info-botonchip-comprar {
   margin-top: -10px;
@@ -1121,6 +1150,16 @@ footer .columna2-iconos-pago img {
   border-color: transparent;
   border-radius: 25px;
   background-color: #F06B5F;
-  font-weight: 600;
+  font-weight: 400;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+.producto-info-subtitulo-producto {
+  margin-bottom: 70px;
+}
+.producto-info-subtitulo-producto h4 {
+  font-size: 20px;
+}
+.producto-info-subtitulo-producto p {
+  font-size: 14px;
+  line-height: 17px;
 }/*# sourceMappingURL=estilos.css.map */

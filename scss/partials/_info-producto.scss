@@ -2,6 +2,7 @@
     display: block;
     flex-direction: column;
 
+
     @include desktop {
         display: flex;
         flex-direction: row;
@@ -34,12 +35,22 @@
     }
 
     &-info {
-        margin: 20px;
+        display: inline-table;
+        margin: 0 20px;
+
+        @include desktop {
+            margin: 20px 40px 0 0;
+        }
 
         .texto {
             &-precio {
-                font-size: 28px;
+                font-size: 22px;
                 color: $colornaranja;
+                @include desktop{
+                    font-size: 28px;
+                color: $colornaranja;
+                }
+
             }
 
             &-iva {
@@ -54,8 +65,15 @@
 
         &-pagar {
             border-radius: 10px;
+            padding: 20px;
             border: $colorazul solid 1px;
-            padding: 15px;
+            margin: 20px;
+
+            @include desktop{
+                border-radius: 10px;
+                border: $colorazul solid 1px;
+                padding: 20px;
+            }
 
             &-precio {
                 font-size: 28px;
@@ -64,6 +82,11 @@
 
             &-texto {
                 font-size: 12px;
+
+                &-condiciones {
+                    font-size: 12px;
+                    color: $colorturquesaoscuro;
+                }
             }
         }
 
@@ -91,15 +114,20 @@
                 font-size: 13px;
                 font-weight: 600;
                 text-align: center;
-                padding-top: 5px;
+                padding-top: 10px;
             }
 
             &-imagen {
                 img {
+                    margin-top: 15px;
                     border-radius: 10px;
                     max-height: fit-content;
                     max-width: 100px;
 
+                    &:hover {
+                        border: 3px solid;
+                        color: $colornaranja;
+                    }
                 }
             }
         }
@@ -114,30 +142,12 @@
             justify-content: center;
             width: 30%;
             margin: 30px auto 0 auto;
-
-            // .input-number {
-            //     display: flex;
-            //     text-align: center;
-            //     font-size: 12px;
-            //     font-weight: 700;
-            // }
-
-            // &-minus {
-            //     display: flex;
-            //     align-items: center;
-            //     padding: 6px 14px 6px 14px;
-            // }
-
-            // .btn-number {
-            //     font-size: 12px;
-            //     font-weight: 600;
-            // }
         }
 
         &-botonchip {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            margin-top: 30px;
 
             &-comprar {
                 margin-top: -10px;
@@ -148,16 +158,27 @@
                 border-color: transparent;
                 border-radius: 25px;
                 background-color: $colornaranja;
-                font-weight: 600;
+                font-weight: 400;
                 box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(0, 0, 0, 0.10);
 
+            }
+        }
+
+        &-subtitulo {
+            &-producto {
+                margin-bottom: 70px;
+
+                h4 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
             }
         }
 
     }
 
 }
-
-// .footer-info-producto{
-//     position: absolute; bottom: 0;
-// }
