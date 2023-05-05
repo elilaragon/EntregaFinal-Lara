@@ -166,7 +166,11 @@
 
         &-subtitulo {
             &-producto {
-                margin-bottom: 70px;
+                margin: 20px;
+
+                @include desktop{
+                    margin-bottom: 70px;
+                }
 
                 h4 {
                     font-size: 20px;

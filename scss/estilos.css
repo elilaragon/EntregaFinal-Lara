@@ -346,7 +346,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 16px;
     height: auto;
     max-width: 100%;
     border-bottom: none !important;
@@ -1154,7 +1153,12 @@ footer .columna2-iconos-pago img {
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(0, 0, 0, 0.1);
 }
 .producto-info-subtitulo-producto {
-  margin-bottom: 70px;
+  margin: 20px;
+}
+@media (min-width: 550px) {
+  .producto-info-subtitulo-producto {
+    margin-bottom: 70px;
+  }
 }
 .producto-info-subtitulo-producto h4 {
   font-size: 20px;
